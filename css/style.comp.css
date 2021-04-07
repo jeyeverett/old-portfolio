@@ -115,7 +115,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         font-size: 3rem;
-        letter-spacing: 1rem;
+        letter-spacing: .75rem;
         font-weight: 400; } }
 
 .heading-secondary {
@@ -337,6 +337,8 @@ u-text-white {
     @media only screen and (max-width: 56.25em) {
       .feature-box__icon {
         margin: 0; } }
+  .feature-box__text {
+    margin-bottom: -10rem; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.15); }
@@ -886,8 +888,7 @@ u-text-white {
         box-shadow: 0 1.25rem 2.25rem rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 37.5em) {
       .header__logo-box {
-        top: 2rem;
-        left: 2rem; } }
+        display: none; } }
   .header__logo {
     height: 8rem;
     border-radius: 50%;

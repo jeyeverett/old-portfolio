@@ -31,6 +31,10 @@
         }
     }
 
+    &__text {
+        margin-bottom: -10rem;
+    }
+
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
         box-shadow: 0 3rem 4rem rgba($color-black, .15);

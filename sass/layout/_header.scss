@@ -59,8 +59,7 @@
         }
 
         @include respond (phone) {
-            top: 2rem;
-            left: 2rem;
+            display: none;
         }
 
     }

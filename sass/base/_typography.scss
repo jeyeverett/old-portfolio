@@ -41,7 +41,7 @@ body {
 
         @include respond(phone) {
             font-size: 3rem;
-            letter-spacing: 1rem;
+            letter-spacing: .75rem;
             font-weight: 400;
         }
     } 
