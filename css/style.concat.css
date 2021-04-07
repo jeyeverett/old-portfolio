@@ -792,9 +792,10 @@ u-text-white {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative; }
+  position: relative;
+  height: 52rem; }
   .card__side {
-    height: min-content;
+    height: 52rem;
     transition: all .5s ease;
     position: absolute;
     top: 0;
