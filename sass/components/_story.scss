@@ -1,0 +1,89 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem; //this accounts for the translateX we use in __shape
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    & > * {
+        transform: skewX(12deg);
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 6rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+        padding: 5rem;
+        padding-left: 6rem;
+
+        & > * {
+            transform: skewX(0);
+        }
+    }
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%); //This defines the outside shape of the elemnt as a circle with radius equal to 50% of its width (15rem, as defined above) with center of circle at 50% 50% i.e. dead center, note that all properties define in __shape need to be present for this application to work
+            border-radius: none;
+        }
+
+        @include respond(phone) {
+            transform: translateX(-2rem) skewX(0);
+        }
+    }
+
+    &__image {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .2s;
+    }
+
+    &__caption {
+        @include absCenter;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .2s;
+    }
+
+    &__text .heading-tertiary {
+        @include respond (xs) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__image {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+

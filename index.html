@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        
+        <title>Jeysen Freedman | Full-stack Developer</title>
+    </head>
+
+    <body>
+        <div class="index">
+            <nav class="index__nav">
+                <ul class="index__list">
+                    <li class="index__item"><a href="#about" class="index__link">About</a></li>
+                    <li class="index__item"><a href="#services" class="index__link">Services</a></li>
+                    <li class="index__item"><a href="#projects" class="index__link">Projects</a></li>
+                    <li class="index__item"><a href="#contact" class="index__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navigation hide" id="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+
+            <label for="nav-toggle" class="navigation__button" id="button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="img/selfie.jpg" alt="Logo" class="header__logo">
+            </div>
+            <div class="header__heading-container">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Jeysen Freedman</span>
+                    <span class="heading-primary--sub">Full-stack developer</span>
+                </h1>
+                <a href="#contact" class="btn btn--white btn--animated btn--contact heading-tertiary">Contact me!</a>
+            </div>
+        </header>
+        <main>
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-big" id="about">
+                    <h2 class="heading-secondary">
+                        About me
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Passionate innovator and creator</h3>
+                        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, corrupti sunt nihil amet, soluta voluptate placeat veritatis.</p>
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Lifelong learner and problem solver</h3>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora tempore ratione enim rerum aut doloribus saepe voluptatibus vel quam.</p>
+                        <!-- <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a> -->
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <!-- Below we are providing the information the browser needs to choose the optimal image to be displayed on the client screen, we provide a srcset and beside each src we give the pixel width shown e.g. 300w. Then in the sizes attribute we give a condition along with what size the image will be at that condition e.g. at up to a max-width of 900px (56.25em), our image is approx 20% of the view port width, the last item is the default value. We add a src attribute at the end to account for outdated browsers. This takes care of both resolution and density switching i.e. view port width and pixel density-->
+                            <img 
+                                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                                alt="Photo 1" 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                class="composition__photo composition__photo--p1"
+                                src="img/nat-1-large.jpg">
+
+                            <img 
+                                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                                alt="Photo 2" 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                class="composition__photo composition__photo--p2"
+                                src="img/nat-2-large.jpg">
+
+                            <img 
+                                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                                alt="Photo 3" 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                class="composition__photo composition__photo--p3"
+                                src="img/nat-3-large.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>   
+            <section class="section-features">
+                <div class="u-center-text u-move-text-up" id="services">
+                    <h2 class="heading-secondary" style="color: #fff;">
+                        Services
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <i class="fab fa-html5 feature-box__icon"></i>
+                            <i class="fab fa-css3 feature-box__icon"></i>
+                            <i class="fab fa-js-square feature-box__icon"></i>
+                            <br><br>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Front-end Development</h3>
+                            <p class="feature-box__text">Crafting beautiful and responsive websites that provide a powerful UI/UX through the application of the fundamental World Wide Web technologies.<br><br><strong>HTML, CSS, JavaScript</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <i class="fab fa-node-js feature-box__icon"></i>
+                            <br><br>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Back-end Development</h3>
+                            <p class="feature-box__text">Delivering seamless code that efficiently implements the functionality required to drive diverse and complex applications via the latest and greatest tech stacks.<br><br><strong>NodeJS, ExpressJS</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <i class="fas fa-database feature-box__icon"></i>
+                            <br><br>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Database Design</h3>
+                            <p class="feature-box__text">Providing persistent and secure storage of data with SQL and No-SQL and using data science principles to effectively analyze and present information.<br><br><strong>MongoDB, PostgreSQL</strong></p></p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-heart"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small"></h3>
+                            <p class="feature-box__text">Lorem ipsum dolor sit, amet consectetur soluta adipisicing elit.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <section class="section-tours">
+                <div class="u-center-text u-margin-bottom-medium"  id="projects">
+                    <h2 class="heading-secondary" id="section-tours">
+                        Projects
+                    </h2>
+                </div>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--1">
+                                        &nbsp;
+                                    </div>
+                                    <h4 class="card__heading">
+                                        <span class="card__heading-span card__heading-span--1">
+                                            Coast2Coast Camping
+                                        </span>
+                                    </h4>
+                                    <div class="card__details">
+                                        <ul>
+                                            <li>HTML & CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>EJS</li>
+                                            <li>NodeJS & ExpressJS</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back card__side--back--1">
+                                    <div class="card__cta">
+                                        <div class="card__price-box">
+                                            <p class="card__price-only">Checkout the</p>
+                                            <p class="card__price-value">CODE</p>
+                                        </div>
+                                        <a href="http://coast2coastcamping.herokuapp.com/" class="btn btn--white" target="_blank">Website</a><br><br>
+                                        <a href="https://github.com/jeyeverett/coast2coastcamping" class="btn btn--white" target="_blank">Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--2">
+                                        &nbsp;
+                                    </div>
+                                    <h4 class="card__heading">
+                                        <span class="card__heading-span card__heading-span--2">
+                                            Facial Recognition
+                                        </span>
+                                    </h4>
+                                    <div class="card__details">
+                                        <ul>
+                                            <li>HTML & CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>ReactJS</li>
+                                            <li>NodeJS & ExpressJS</li>
+                                            <li>PostgreSQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back card__side--back--2">
+                                    <div class="card__cta">
+                                        <div class="card__price-box">
+                                            <p class="card__price-only">Only</p>
+                                            <p class="card__price-value">$597</p>
+                                        </div>
+                                        <a href="#popup" class="btn btn--white">Website</a><br><br>
+                                        <a href="#popup" class="btn btn--white">Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--3">
+                                        &nbsp;
+                                    </div>
+                                    <h4 class="card__heading">
+                                        <span class="card__heading-span card__heading-span--3">
+                                            The Snow Adventurer
+                                        </span>
+                                    </h4>
+                                    <div class="card__details">
+                                        <ul>
+                                            <li>5 day tour</li>
+                                            <li>Up to 15 people</li>
+                                            <li>3 tour guides</li>
+                                            <li>Sleep in provided tents</li>
+                                            <li>...</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back card__side--back--3">
+                                    <div class="card__cta">
+                                        <div class="card__price-box">
+                                            <p class="card__price-only">Only</p>
+                                            <p class="card__price-value">$897</p>
+                                        </div>
+                                        <a href="#popup" class="btn btn--white">Website</a><br><br>
+                                        <a href="#popup" class="btn btn--white">Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-center-text">
+                        <a href="#" class="btn btn--green">Checkout all projects</a>
+                    </div>
+            </section>
+            <!-- <section class="section-stories">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
+                        Your browser is not supported.
+                    </video>
+                </div>
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        We make people genuinely happy
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <picture class="story__image">
+                                <source media="(max-width: 56.1875em)" srcset="img/nat-8-small.jpg">
+                                <source media="(min-width: 56.25em)" srcset="img/nat-8-small-2x.jpg">
+                                <img src="img/nat-8-small-2x.jpg" alt="Person on a tour" class="story__image">
+                            </picture>
+                            <figcaption class="story__caption">
+                                Mary Smith
+                            </figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                I had the best week ever with my family
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis tenetur voluptates impedit eum, consequatur quae. Ullam, quisquam accusamus perferendis, quas molestias quibusdam enim delectus doloremque itaque porro minima, fugiat nemo! Molestias voluptatum mollitia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <picture class="story__image">
+                                <source media="(max-width: 56.1875em)" srcset="img/nat-9-small.jpg">
+                                <source media="(min-width: 56.25em)" srcset="img/nat-9-small-2x.jpg">
+                                <img src="img/nat-9-small-2x.jpg" alt="Person on a tour" class="story__image">
+                            </picture>
+                            <figcaption class="story__caption">
+                                Jack Wilson
+                            </figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Wow! my life is compl&shy;etely different now
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum mollitia. Numquam nostrum quod expedita, voluptatem eum, officiis maxime distinctio sequi nam velit, odio deleniti! Vitae deleniti tempora necessitatibus laudantium aliquam dolorum ex!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text">
+                    <a href="#" class="btn-text">Read all stories &rarr;</a>
+                </div>
+            </section> -->
+            <section class="section-book" id="contact">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form 
+                                    action="https://formspree.io/f/mleaelay" 
+                                    method="POST" 
+                                    class="form" 
+                                    id="contact-form">
+
+                                <div class="u-margin-bottom-medium u-center-text">
+                                    <h2 class="heading-secondary">
+                                        Contact me
+                                    </h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" id="name" placeholder="Full Name" name="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" id="email" placeholder="Email" name="_replyto" required>
+                                    <label for="email" class="form__label">Email</label>
+                                </div>
+                                <!-- <div class="form__group">
+                                    <input type="text" class="form__input form__textarea" id="text" placeholder="Your message..." required>
+                                    <label for="textarea" class="form__label">Message</label>
+                                </div> -->
+                                <!-- <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="small" name="size">
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Small tour group
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="large" name="size">
+                                        <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Large tour group
+                                        </label>
+                                    </div>
+                                </div> -->
+                                <div class="form__group u-center-text">
+                                    <button class="btn btn--green form__btn">
+                                        Submit &rarr;
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form__group">
+                            <textarea  class="form__input form__textarea" name="message" form="contact-form" id="message" cols="100" rows="10" name="message" minlength="80" placeholder="Your message..." required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer u-center-text">
+            <div class="footer__logo-box">
+
+                <!-- Below is for responsive images, specifically choosing the right version of the image for the right screen. In the srcset atrribute we list the images by resolution as shown. We use the Source tag to provide a media query i.e. if the media query is true, we use a src from the Source tag (either the 1x or 2x depending on resolution), if not we use the img tag srcset -->
+
+                <picture class="footer__logo">
+                    <source srcset="img/selfie_small.jpg 1x, img/selfie_small.jpg 2x" media="(max-width: 37.5em)">
+                    <img srcset="img/selfie.jpg 1x, img/selfie.jpg 2x" alt="Full logo" class="footer__logo" src="img/logo-green-2x.png">
+                </picture>
+
+            </div>
+            <!-- <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <h2 class="heading-secondary u-margin-bottom-small" style="color: #A0A397;">
+                Thank you for visiting my website!
+            </h2>
+            <p class="footer__copyright">
+                Designed and built by <a href="#" class="footer__link">Jeysen Freedman</a><br> Original design and Copyright &copy; by<a href="#" class="footer__link">Jonas Schmedtmann</a>
+            </p>
+        </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img 
+                        srcset="img/nat-8-small.jpg 500w, img/nat-8-small-2x.jpg 960w" 
+                        alt="Woman paddling a canoe" 
+                        sizes="(max-width: 85em) 37.5vw, (min-width: 85.0625em) 25vw, 960w" 
+                        class="popup__image"
+                        src="img/nat-8-small-2x.jpg">
+
+                        <img 
+                        srcset="img/nat-9-small.jpg 500w, img/nat-9-small-2x.jpg 960w" 
+                        alt="Man standing on a mountain" 
+                        sizes="(max-width: 85em) 37.5vw, (min-width: 85.0625em) 25vw, 960w" 
+                        class="popup__image"
+                        src="img/nat-9-small-2x.jpg">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">x</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h2 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h2>
+                    <p class="popup__text">Lorem ipsum, dolor sit amet consectetur repudiandae ea adipisicing elit. Repellat assumenda illo culpa alias aut, quasi dolore, dolor reprehenderit ratione in corporis pariatur obcaecati eius asperiores, molestiae repudiandae ea voluptatum? Pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eum exercitationem temporibus nulla pariatur doloribus sequi? At deserunt laborum maiores! Deserunt iste debitis molestias consequatur optio voluptates laudantium minus quibusdam? Illum dolores atque tempora deserunt, laboriosam ad sequi dicta praesentium, dolorum corrupti ea. Aliquam, soluta? Rem possimus ratione beatae.</p>
+                    <a href="#" class="btn btn--green">Book now</a>    
+                </div>
+            </div>
+        </div>
+
+        <div class="backToTop">
+            <a class="upArrow" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </a>
+        </div>
+
+        <script>
+            let myID = document.getElementById("navigation");
+            let myButton = document.getElementById("button");
+            let myCheckbox = document.getElementById("nav-toggle");
+            let nav = document.querySelector('.navigation__list');
+            let checkbox = document.getElementById('nav-toggle');
+            let form = document.getElementById('contact-form');
+            let text = document.getElementById('message'); 
+
+            // form.onsubmit = function () {
+                
+            //     if(text.value.length < 100) { 
+            //         alert('Please write a longer message.'); 
+            //         return false; 
+            //     } 
+                
+            //     return true;
+            // }
+
+            const selectMenuItem = function () {
+                checkbox.checked = false;
+            }
+
+            const scrollFunc = function() {
+                var y = window.scrollY;
+                if (y >= 100) {
+                    myID.className = "navigation__button show";
+                    myButton.className = "navigation__button show";
+                } else {
+                    myID.className = "navigation__button hide"
+                    myButton.className = "navigation__button hide";
+                    myCheckbox.checked = false;
+                }
+            };
+
+            for (let item of nav.children) {
+                item.addEventListener('click', selectMenuItem);
+            }
+
+            window.addEventListener("scroll", scrollFunc);
+        </script>
+    </body>
+</html>
