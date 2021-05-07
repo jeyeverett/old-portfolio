@@ -1,86 +1,86 @@
 .header {
-    height: 85vh;
-    width: 100%;
+  height: 85vh;
+  min-height: 60rem;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.5)
+    ),
+    url('../img/code_image_small.jfif');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  //Below we write a feature query to account for browsers that do not support clip-path
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    height: 90vh;
+  }
+
+  //Media query for high resolution screens (192dpi [dots per inch] is from the apple retina screen) here if the screen has a resolution larger than 192dpi AND it wider than 600px, we use the high res photo, this is because the default photo (hero-small) is 1200px, so it would be fine for high resolution screens < 600px
+  //The second condition is a rewrite of the first so it will work with safari
+  //The third condition accounts for the case where the dpi is low resolution but the screen width is > 1200px, putting another coniditon into a media query after a comma acts like an OR statement
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 75em) {
     background-image: linear-gradient(
-        to bottom, 
-        rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.5)), 
-        url('../img/code_image_small.jpg');
-    background-size: cover;
-    background-position: top;
-    position: relative;
+        to bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.5)
+      ),
+      url('https://images.unsplash.com/photo-1542831371-d531d36971e6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+  }
 
-    //Below we write a feature query to account for browsers that do not support clip-path
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
-        height: 90vh;
-    }
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
 
-    //Media query for high resolution screens (192dpi [dots per inch] is from the apple retina screen) here if the screen has a resolution larger than 192dpi AND it wider than 600px, we use the high res photo, this is because the default photo (hero-small) is 1200px, so it would be fine for high resolution screens < 600px
-    //The second condition is a rewrite of the first so it will work with safari
-    //The third condition accounts for the case where the dpi is low resolution but the screen width is > 1200px, putting another coniditon into a media query after a comma acts like an OR statement
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
-        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-        only screen and (min-width: 75em) {
-        background-image: linear-gradient(
-            to bottom, 
-            rgba($color-primary-light, 0.8), 
-            rgba($color-primary-dark, 0.5)), 
-            url('https://images.unsplash.com/photo-1542831371-d531d36971e6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    border-radius: 100px;
+    border: 1px solid rgba(#fff, 0.4);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    display: flex;
+    filter: opacity(0.75);
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.2);
+      transition: all 0.2s;
+
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 1.25rem 2.25rem rgba($color-black, 0.2);
+      }
     }
 
     @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      display: none;
     }
+  }
 
-    &__logo-box {
-        position: absolute;
-        top: 3rem;
-        left: 4rem;
-        border-radius: 100px;
-        border: 1px solid rgba(#FFF, 0.4);
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-        display: flex;
-        filter: opacity(0.75);
+  &__logo {
+    height: 8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    // transition: transform 4s ease;
 
-        transition: all .3s;
+    // &:hover {
+    //     transform: rotate(360deg);
+    // }
+  }
 
-        &:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.2);
-            transition: all .2s;
-
-            &:active {
-                transform: translateY(-1px);
-                box-shadow: 0 1.25rem 2.25rem rgba($color-black, 0.2);
-            }
-        }
-
-        @include respond (phone) {
-            display: none;
-        }
-
-    }
-
-    &__logo {
-        height: 8rem;
-        border-radius: 50%;
-        cursor: pointer;
-        // transition: transform 4s ease;
-
-        // &:hover {
-        //     transform: rotate(360deg);
-        // }
-
-
-    }
-    
-    &__heading-container {
-        @include absCenter;
-        width: 100%;
-        top: 40%;
-        text-align: center;
-    }
+  &__heading-container {
+    @include absCenter;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+  }
 }

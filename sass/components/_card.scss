@@ -62,38 +62,14 @@
         &--1 {
             background-image: url('../img/coast2coast.png'), 
             linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            @media (min-resolution: 192dpi) and (min-width: 37.5em), 
-                (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-                (min-width: 75em) {
-                    background-image: url('../img/coast2coast.png'), 
-                        linear-gradient(to right bottom, 
-                        rgba($color-primary-light, 0.8), 
-                        rgba($color-primary-dark, 0.8));
-            }
         }
         &--2 {
             background-image: url('../img/nat-6-small.jpg'), 
             linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            @media (min-resolution: 192dpi) and (min-width: 37.5em), 
-                (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-                (min-width: 75em) {
-                    background-image: url('../img/nat-6.jpg'), 
-                        linear-gradient(to right bottom, 
-                        rgba($color-primary-light, 0.8), 
-                        rgba($color-primary-dark, 0.8));
-            }
         }
         &--3 {
             background-image: url('../img/nat-7-small.jpg'), 
             linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            @media (min-resolution: 192dpi) and (min-width: 37.5em), 
-                (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-                (min-width: 75em) {
-                    background-image: url('../img/nat-7.jpg'), 
-                        linear-gradient(to right bottom, 
-                        rgba($color-primary-light, 0.8), 
-                        rgba($color-primary-dark, 0.8));
-            }
         }
     }
 
