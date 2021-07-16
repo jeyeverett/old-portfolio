@@ -20,75 +20,155 @@
     &--1 {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/144/000000/nodejs.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/96/000000/nodejs.png');
+        }
+      }
     }
 
     &--2 {
       grid-column: 3 / span 3;
       grid-row: 1 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/color/240/000000/amazon-web-services.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/144/000000/amazon-web-services.png');
+        }
+      }
     }
 
     &--3 {
       grid-column: 6 / span 1;
       grid-row: 1 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/postgreesql.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/postgreesql.png');
+        }
+      }
     }
 
     &--4 {
       grid-column: 7 / span 2;
       grid-row: 1 / span 2;
-
       img {
         height: 8rem;
+        @include respond(tab-port) {
+          height: 6rem;
+        }
       }
     }
 
     &--5 {
       grid-column: 1 / span 2;
       grid-row: 3 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/color/144/000000/mongodb.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/96/000000/mongodb.png');
+        }
+      }
     }
 
     &--6 {
       grid-column: 3 / span 2;
       grid-row: 4 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/144/000000/javascript--v1.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/96/000000/javascript--v1.png');
+        }
+      }
     }
 
     &--7 {
       grid-column: 5 / span 1;
       grid-row: 4 / span 1;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/bootstrap.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/bootstrap.png');
+        }
+      }
     }
 
     &--8 {
       grid-column: 6 / span 2;
       grid-row: 3 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/plasticine/200/000000/react.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/plasticine/100/000000/react.png');
+        }
+      }
     }
 
     &--9 {
       grid-column: 8 / span 1;
       grid-row: 3 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/firebase.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/firebase.png');
+        }
+      }
     }
 
     &--10 {
       grid-column: 1 / span 1;
       grid-row: 6 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/css3.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/css3.png');
+        }
+      }
     }
 
     &--11 {
       grid-column: 2 / span 2;
       grid-row: 6 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/144/000000/html-5--v1.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/96/000000/html-5--v1.png');
+        }
+      }
     }
 
     &--12 {
       grid-column: 4 / span 1;
       grid-row: 6 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/sass.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/sass.png');
+        }
+      }
     }
 
     &--13 {
       grid-column: 5 / span 3;
       grid-row: 5 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/color/240/000000/npm.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/144/000000/npm.png');
+        }
+      }
     }
 
     &--14 {
       grid-column: 8 / span 1;
       grid-row: 6 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/material-outlined/96/000000/github.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/material-outlined/48/000000/github.png');
+        }
+      }
     }
   }
 
