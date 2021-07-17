@@ -1,312 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        
-        <title>Jeysen Freedman | Full-stack Developer</title>
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
 
-    <body>
-        <div class="index">
-            <nav class="index__nav">
-                <ul class="index__list">
-                    <li class="index__item"><a href="#about" class="index__link">About</a></li>
-                    <li class="index__item"><a href="#services" class="index__link">Services</a></li>
-                    <li class="index__item"><a href="#projects" class="index__link">Projects</a></li>
-                    <li class="index__item"><a href="#contact" class="index__link">Contact</a></li>
-                </ul>
-            </nav>
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 1.7;
+      }
+    </style>
+
+    <title>Jeysen Freedman | Full-stack Developer</title>
+  </head>
+
+  <body>
+    <div class="index">
+      <nav class="index__nav">
+        <ul class="index__list">
+          <li class="index__item">
+            <a href="#projects" class="index__link">Projects</a>
+          </li>
+          <li class="index__item">
+            <a href="#services" class="index__link">Services</a>
+          </li>
+          <li class="index__item">
+            <a href="#about" class="index__link">About</a>
+          </li>
+          <li class="index__item">
+            <a href="#contact" class="index__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="navigation hide" id="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+
+      <label for="nav-toggle" class="navigation__button" id="button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#services" class="navigation__link">Services</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__heading-container">
+        <h1 class="heading-primary u-left-text">
+          <span class="heading-primary--main">Hi, I'm Jeysen</span>
+          <span class="heading-primary--sub"
+            >I design and build beautiful, responsive web applications that are
+            engaging and user friendly. I can manage projects from UI design to
+            full-stack implementation all the way to deployment on
+            highly-available, fault-tolerant, and scaleable cloud
+            architectures.</span
+          >
+          <a href="#contact" class="btn btn--white btn--animated btn--contact"
+            >Contact me</a
+          >
+        </h1>
+      </div>
+      <img class="selfie" src="img/self_full.png" alt="" />
+    </header>
+    <main>
+      <section class="section-projects">
+        <div class="u-center-text u-margin-bottom-medium" id="projects">
+          <h2 class="heading-secondary" id="section-tours">Projects</h2>
         </div>
-        <div class="navigation hide" id="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-
-            <label for="nav-toggle" class="navigation__button" id="button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
-                    <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
-                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <header class="header">
-            <div class="header__heading-container">
-                <h1 class="heading-primary u-left-text">
-                    <span class="heading-primary--main">Hi, I'm Jeysen</span>
-                    <span class="heading-primary--sub">I design and build beautiful, responsive web applications that are engaging and user friendly. I can manage projects from initial design to deployment on highly-available, fault-tolerant, and scaleable cloud architectures.</span>
-                    <a href="#contact" class="btn btn--white btn--animated btn--contact heading-tertiary u-left-text">Contact me</a>
-                </h1>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Coast2Coast Camping
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>EJS</li>
+                    <li>NodeJS & ExpressJS</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Checkout the</p>
+                    <p class="card__price-value">CODE</p>
+                  </div>
+                  <a
+                    href="http://coast2coastcamping.herokuapp.com/"
+                    class="btn btn--white"
+                    target="_blank"
+                    >Website</a
+                  ><br /><br />
+                  <a
+                    href="https://github.com/jeyeverett/coast2coastcamping"
+                    class="btn btn--white"
+                    target="_blank"
+                    >Github</a
+                  >
+                </div>
+              </div>
             </div>
-            <img class="selfie" src="img/self_full.png" alt="">
-        </header>
-        <main>
-            <section class="section-projects">
-                <div class="u-center-text u-margin-bottom-medium"  id="projects">
-                    <h2 class="heading-secondary" id="section-tours">
-                        Projects
-                    </h2>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Facial Recognition
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS & ExpressJS</li>
+                    <li>PostgreSQL</li>
+                  </ul>
                 </div>
-                    <div class="row">
-                        <div class="col-1-of-3">
-                            <div class="card">
-                                <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--1">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--1">
-                                            Coast2Coast Camping
-                                        </span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>HTML & CSS</li>
-                                            <li>JavaScript</li>
-                                            <li>EJS</li>
-                                            <li>NodeJS & ExpressJS</li>
-                                            <li>MongoDB</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card__side card__side--back card__side--back--1">
-                                    <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Checkout the</p>
-                                            <p class="card__price-value">CODE</p>
-                                        </div>
-                                        <a href="http://coast2coastcamping.herokuapp.com/" class="btn btn--white" target="_blank">Website</a><br><br>
-                                        <a href="https://github.com/jeyeverett/coast2coastcamping" class="btn btn--white" target="_blank">Github</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-of-3">
-                            <div class="card">
-                                <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--2">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--2">
-                                            Facial Recognition
-                                        </span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>HTML & CSS</li>
-                                            <li>JavaScript</li>
-                                            <li>ReactJS</li>
-                                            <li>NodeJS & ExpressJS</li>
-                                            <li>PostgreSQL</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card__side card__side--back card__side--back--2">
-                                    <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$597</p>
-                                        </div>
-                                        <a class="btn btn--white">Website</a><br><br>
-                                        <a class="btn btn--white">Github</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-of-3">
-                            <div class="card">
-                                <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--3">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--3">
-                                            The Snow Adventurer
-                                        </span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>5 day tour</li>
-                                            <li>Up to 15 people</li>
-                                            <li>3 tour guides</li>
-                                            <li>Sleep in provided tents</li>
-                                            <li>...</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card__side card__side--back card__side--back--3">
-                                    <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$897</p>
-                                        </div>
-                                        <a class="btn btn--white">Website</a><br><br>
-                                        <a class="btn btn--white">Github</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="u-center-text">
-                        <a href="#" class="btn btn--green">Checkout all projects</a>
-                    </div>
-            </section>
-            <section class="section-services">
-                <div class="u-center-text u-move-text-up" id="services">
-                    <h2 class="heading-secondary" style="color: #fff;">
-                        Services
-                    </h2>
+              </div>
+              <div class="card__side card__side--back card__side--back--2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$597</p>
+                  </div>
+                  <a class="btn btn--white">Website</a><br /><br />
+                  <a class="btn btn--white">Github</a>
                 </div>
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="feature-box">
-                            <i class="fab fa-html5 feature-box__icon"></i>
-                            <i class="fab fa-css3 feature-box__icon"></i>
-                            <i class="fab fa-js-square feature-box__icon"></i>
-                            <br><br>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Front-end Development</h3>
-                            <p class="feature-box__text">Crafting beautiful and responsive websites that provide a powerful UI/UX through the application of the fundamental World Wide Web technologies.<br><br><strong>HTML, CSS, JavaScript</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="feature-box">
-                            <i class="fab fa-node-js feature-box__icon"></i>
-                            <br><br>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Back-end Development</h3>
-                            <p class="feature-box__text">Delivering seamless code that efficiently implements the functionality required to drive diverse and complex applications via the latest and greatest tech stacks.<br><br><strong>NodeJS, ExpressJS</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="feature-box">
-                            <i class="fas fa-database feature-box__icon"></i>
-                            <br><br>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Database Design</h3>
-                            <p class="feature-box__text">Providing persistent and secure storage of data with SQL and No-SQL and using data science principles to effectively analyze and present information.<br><br><strong>MongoDB, PostgreSQL</strong></p></p>
-                        </div>
-                    </div>
-                    <!-- <div class="col-1-of-4">
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    React Store
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>CSS in JS</li>
+                    <li>JavaScript</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS & ExpressJS</li>
+                    <li>Firestore</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$897</p>
+                  </div>
+                  <a class="btn btn--white">Website</a><br /><br />
+                  <a class="btn btn--white">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text">
+          <a href="#" class="btn btn--green">Checkout all projects</a>
+        </div>
+      </section>
+      <section class="section-services">
+        <div class="u-center-text u-move-text-up" id="services">
+          <h2 class="heading-secondary" style="color: #fff">Services</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="fab fa-css3 feature-box__icon"></i>
+              <i class="fab fa-js-square feature-box__icon"></i>
+              <i class="fab fa-react feature-box__icon"></i>
+              <br /><br />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Front-end Development
+              </h3>
+              <p class="feature-box__text">
+                Keep users glued to your web page! Craft beautiful and
+                responsive websites that keep users engaged in reading about the
+                benefits of your business.
+              </p>
+              <p class="feature-box__text feature-box__text--caption">
+                <strong>HTML - CSS - JavaScript - React</strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="fab fa-node feature-box__icon"></i>
+              <i class="fas fa-database feature-box__icon"></i>
+              <br /><br />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Back-end Development
+              </h3>
+              <p class="feature-box__text">
+                Delivering seamless code that efficiently implements the
+                functionality required to drive diverse and complex applications
+                via the latest and greatest tech stacks.
+              </p>
+              <p class="feature-box__text feature-box__text--caption">
+                <strong>NodeJS - ExpressJS - MongoDB</strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="fab fa-aws feature-box__icon"></i>
+              <br /><br />
+              <h3 class="heading-tertiary u-margin-bottom-small">Deployment</h3>
+              <p class="feature-box__text">
+                Providing persistent and secure storage of data with SQL and
+                No-SQL and using data science principles to effectively analyze
+                and present information.
+              </p>
+              <p class="feature-box__text feature-box__text--caption">
+                <strong>EC2 - S3 - ECS - Route53</strong>
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-1-of-4">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-heart"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small"></h3>
                             <p class="feature-box__text">Lorem ipsum dolor sit, amet consectetur soluta adipisicing elit.</p>
                         </div>
                     </div> -->
-                </div>
-            </section>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big" id="about">
-                    <h2 class="heading-secondary">
-                        About me
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Passionate innovator and creator</h3>
-                        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, corrupti sunt nihil amet, soluta voluptate placeat veritatis.</p>
+        </div>
+      </section>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big" id="about">
+          <h2 class="heading-secondary">About me</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Passionate innovator and creator
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              corrupti sunt nihil amet, soluta voluptate placeat veritatis.
+            </p>
 
-                        <h3 class="heading-tertiary u-margin-bottom-small">Lifelong learner and problem solver</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora tempore ratione enim rerum aut doloribus saepe voluptatibus vel quam.</p>
-                        <!-- <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a> -->
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8e6f0544-7efd-4664-b994-cf7da49631fc" data-share-badge-host="https://www.credly.com"></div>
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="84379dad-225f-4a31-88e3-04e5a8eadd57" data-share-badge-host="https://www.credly.com"></div>
-                        </div>
-                    </div>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Lifelong learner and problem solver
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              tempora tempore ratione enim rerum aut doloribus saepe
+              voluptatibus vel quam.
+            </p>
+            <!-- <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a> -->
+          </div>
+          <div class="col-1-of-2 aws">
+            <div class="aws__badge">
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="8e6f0544-7efd-4664-b994-cf7da49631fc"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+            </div>
+            <div class="aws__badge u-margin-left-medium">
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="84379dad-225f-4a31-88e3-04e5a8eadd57"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img class="gallery__item--1-img" alt="nodejs" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img class="gallery__item--2-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img class="gallery__item--3-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img
+            src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img class="gallery__item--5-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img class="gallery__item--6-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img class="gallery__item--7-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img class="gallery__item--8-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <img class="gallery__item--9-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <img class="gallery__item--10-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+          <img class="gallery__item--11-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--12">
+          <img class="gallery__item--12-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--13">
+          <img class="gallery__item--13-img" />
+        </figure>
+        <figure class="gallery__item gallery__item--14">
+          <img class="gallery__item--14-img" />
+        </figure>
+      </section>
+      <section class="section-book" id="contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form
+                action="https://formspree.io/f/mleaelay"
+                method="POST"
+                class="form"
+                id="contact-form"
+              >
+                <div class="u-margin-bottom-medium u-center-text">
+                  <h2 class="heading-secondary heading-secondary__contact">
+                    Contact me
+                  </h2>
                 </div>
-            </section>   
-            <section class="gallery">
-                <figure class="gallery__item gallery__item--1">
-                    <img class="gallery__item--1-img" alt="nodejs" />
-                </figure>
-                <figure class="gallery__item gallery__item--2">
-                    <img class="gallery__item--2-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--3">
-                    <img class="gallery__item--3-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--4">
-                    <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"/>
-                </figure>
-                <figure class="gallery__item gallery__item--5">
-                    <img class="gallery__item--5-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--6">
-                    <img class="gallery__item--6-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--7">
-                    <img class="gallery__item--7-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--8">
-                    <img class="gallery__item--8-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--9">
-                    <img class="gallery__item--9-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--10">
-                    <img class="gallery__item--10-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--11">
-                    <img class="gallery__item--11-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--12">
-                    <img class="gallery__item--12-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--13">
-                    <img class="gallery__item--13-img" />
-                </figure>
-                <figure class="gallery__item gallery__item--14">
-                    <img class="gallery__item--14-img" />
-                </figure>
-    
-            </section>
-            <section class="section-book" id="contact">
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form 
-                                    action="https://formspree.io/f/mleaelay" 
-                                    method="POST" 
-                                    class="form" 
-                                    id="contact-form">
-
-                                <div class="u-margin-bottom-medium u-center-text">
-                                    <h2 class="heading-secondary">
-                                        Contact me
-                                    </h2>
-                                </div>
-                                <div class="form__group">
-                                    <input type="text" class="form__input" id="name" placeholder="Full Name" name="name" required>
-                                    <label for="name" class="form__label">Full Name</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="email" class="form__input" id="email" placeholder="Email" name="_replyto" required>
-                                    <label for="email" class="form__label">Email</label>
-                                </div>
-                                <!-- <div class="form__group">
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Full Name"
+                    name="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Email"
+                    name="_replyto"
+                    required
+                  />
+                  <label for="email" class="form__label">Email</label>
+                </div>
+                <!-- <div class="form__group">
                                     <input type="text" class="form__input form__textarea" id="text" placeholder="Your message..." required>
                                     <label for="textarea" class="form__label">Message</label>
                                 </div> -->
-                                <!-- <div class="form__group u-margin-bottom-medium">
+                <!-- <div class="form__group u-margin-bottom-medium">
                                     <div class="form__radio-group">
                                         <input type="radio" class="form__radio-input" id="small" name="size">
                                         <label for="small" class="form__radio-label">
@@ -322,91 +422,130 @@
                                         </label>
                                     </div>
                                 </div> -->
-                                <div class="form__group u-center-text">
-                                    <button class="btn btn--green form__btn">
-                                        Submit &rarr;
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="form__group">
-                            <textarea  class="form__input form__textarea" name="message" form="contact-form" id="message" cols="100" rows="10" name="message" minlength="80" placeholder="Your message..." required></textarea>
-                        </div>
-                    </div>
+                <div class="form__group u-center-text">
+                  <button class="btn btn--green form__btn">
+                    Submit &rarr;
+                  </button>
                 </div>
-            </section>
-        </main>
-
-        <footer class="footer u-center-text">
-            <div class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#projects" class="footer__link">Projects</a></li>
-                    <li class="footer__item"><a href="#services" class="footer__link">Services</a></li>
-                    <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
-                    <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
-                </ul>
+              </form>
             </div>
-            <div class="footer__logo-box">
-
-                <!-- Below is for responsive images, specifically choosing the right version of the image for the right screen. In the srcset atrribute we list the images by resolution as shown. We use the Source tag to provide a media query i.e. if the media query is true, we use a src from the Source tag (either the 1x or 2x depending on resolution), if not we use the img tag srcset -->
-
-                <picture class="footer__logo">
-                    <source srcset="img/selfie_small.jpg 1x, img/selfie_small.jpg 2x" media="(max-width: 37.5em)">
-                    <img srcset="img/selfie_small.jpg 1x, img/selfie.jpg 2x" alt="Full logo" class="footer__logo">
-                </picture>
-                <div class="footer__logo-box--caption">
-                    Jeysen Freedman<br>
-                    jeysenfreedman@gmail.com<br>
-                    <span>
-                        Bachelor of Engineering, Electrical<br>
-                        AWS Certified Cloud Practitioner<br>
-                        AWS Certified Solutions Architect Associate<br>
-                    </span>
-                </div>
-
+            <div class="form__group">
+              <textarea
+                class="form__input form__textarea"
+                name="message"
+                form="contact-form"
+                id="message"
+                cols="100"
+                rows="10"
+                name="message"
+                minlength="80"
+                placeholder="Your message..."
+                required
+              ></textarea>
             </div>
-            <p class="footer__copyright">
-                Copyright &copy; 2021 by Jeysen Freedman
-            </p>
-        </footer>
-
-        <div class="backToTop">
-            <a class="upArrow" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-            </a>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <script>
-            let myID = document.getElementById("navigation");
-            let myButton = document.getElementById("button");
-            let myCheckbox = document.getElementById("nav-toggle");
-            let nav = document.querySelector('.navigation__list');
-            let checkbox = document.getElementById('nav-toggle');
+    <footer class="footer u-center-text">
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+          <li class="footer__item">
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li class="footer__item">
+            <a href="#about" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__logo-box">
+        <!-- Below is for responsive images, specifically choosing the right version of the image for the right screen. In the srcset atrribute we list the images by resolution as shown. We use the Source tag to provide a media query i.e. if the media query is true, we use a src from the Source tag (either the 1x or 2x depending on resolution), if not we use the img tag srcset -->
 
-            const scrollFunc = function() {
-                var y = window.scrollY;
-                if (y >= 100) {
-                    myID.className = "navigation__button show";
-                    myButton.className = "navigation__button show";
-                } else {
-                    myID.className = "navigation__button hide"
-                    myButton.className = "navigation__button hide";
-                    myCheckbox.checked = false;
-                }
-            };
+        <picture class="footer__logo">
+          <img
+            src="img/selfie_small.jpg"
+            alt="Full logo"
+            class="footer__logo"
+          />
+        </picture>
+        <div class="footer__logo-box--caption">
+          Jeysen Freedman<br />
+          Web Application and Cloud Developer<br />
+          jeysenfreedman@gmail.com<br /><br />
+          <span>
+            Bachelor of Engineering, Electrical<br />
+            AWS Certified Cloud Practitioner<br />
+            AWS Certified Solutions Architect Associate<br />
+          </span>
+        </div>
+      </div>
+      <div class="footer__icons">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+        <img
+          src="https://img.icons8.com/fluent-systems-regular/48/000000/github.png"
+        />
+      </div>
+      <p class="footer__copyright">Copyright &copy; 2021 by Jeysen Freedman</p>
+    </footer>
 
-            const selectMenuItem = function () {
-                checkbox.checked = false;
-            }
+    <div class="backToTop">
+      <a class="upArrow" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-arrow-bar-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </a>
+    </div>
 
-            for (let item of nav.children) {
-                item.addEventListener('click', selectMenuItem);
-            }
+    <script>
+      let myID = document.getElementById('navigation');
+      let myButton = document.getElementById('button');
+      let myCheckbox = document.getElementById('nav-toggle');
+      let nav = document.querySelector('.navigation__list');
+      let checkbox = document.getElementById('nav-toggle');
 
-            window.addEventListener("scroll", scrollFunc);
-        </script>
-        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-    </body>
+      const scrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 100) {
+          myID.className = 'navigation__button show';
+          myButton.className = 'navigation__button show';
+        } else {
+          myID.className = 'navigation__button hide';
+          myButton.className = 'navigation__button hide';
+          myCheckbox.checked = false;
+        }
+      };
+
+      const selectMenuItem = function () {
+        checkbox.checked = false;
+      };
+
+      for (let item of nav.children) {
+        item.addEventListener('click', selectMenuItem);
+      }
+
+      window.addEventListener('scroll', scrollFunc);
+    </script>
+    <script
+      type="text/javascript"
+      async
+      src="//cdn.credly.com/assets/utilities/embed.js"
+    ></script>
+  </body>
 </html>

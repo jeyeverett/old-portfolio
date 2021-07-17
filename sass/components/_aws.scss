@@ -1,0 +1,35 @@
+.aws {
+  display: flex;
+  justify-content: center;
+
+  &__badge {
+    width: min-content;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    border-radius: 2px;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 1rem;
+
+    @include respond(tab-port) {
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+    }
+
+    &:hover {
+      outline: 1rem solid $color-primary;
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+
+      @include respond(tab-port) {
+        outline: 0.5rem solid $color-primary;
+        box-shadow: 0 1.5rem 3rem rgba($color-black, 0.4);
+      }
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+    @include respond(tab-port) {
+      transform: scale(1.2);
+    }
+  }
+}

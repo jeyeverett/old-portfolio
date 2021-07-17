@@ -41,11 +41,12 @@
   }
 
   &--white {
-    color: $color-grey-dark;
+    color: $color-primary;
     background-color: $color-white;
 
-    &::after {
-      background-color: $color-white;
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
     }
   }
 

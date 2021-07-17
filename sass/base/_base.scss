@@ -2,47 +2,53 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%; //1rem = 10px because 10px/16px = 62.5% (16px is the assumed default font-size)
+  font-size: 62.5%; //1rem = 10px because 10px/16px = 62.5% (16px is the assumed default font-size)
 
-    @include respond(tab-land) { //screen < 1200px?
-        font-size: 56.25%; //1rem = 9px because 9px/16px = 56.25%;
-    }
-    
-    @include respond(tab-port) { //screen 900px?
-        font-size: 50%; //1rem = 8px because 8px/16px = 50%;
-    }
-    
-    @include respond(phone) { //screen < 600px?
-        font-size: 37.5%; //1rem = 6px because 6px/16px = 37.5%;
-    }
+  @include respond(tab-land) {
+    //screen < 1200px?
+    font-size: 56.25%; //1rem = 9px because 9px/16px = 56.25%;
+  }
 
-    @include respond(xs) { //screen < 400px?
-        font-size: 25%; //1rem = 4px because 4px/16px = 25%;
-    }
+  @include respond(tab-port) {
+    //screen 900px?
+    font-size: 50%; //1rem = 8px because 8px/16px = 50%;
+  }
 
-    @include respond(desktopXL) { //screen > 1800px?
-        font-size: 75%; //1rem = 12px because 12px/16px = 75%
-    }
+  @include respond(phone) {
+    //screen < 600px?
+    font-size: 37.5%; //1rem = 6px because 6px/16px = 37.5%;
+  }
 
-    scroll-behavior: smooth;
+  @include respond(xs) {
+    //screen < 400px?
+    font-size: 25%; //1rem = 4px because 4px/16px = 25%;
+  }
+
+  @include respond(desktopXL) {
+    //screen > 1800px?
+    font-size: 75%; //1rem = 12px because 12px/16px = 75%
+  }
+
+  scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
-    padding: 2.5rem; /*Creates the nice white border around the entire web page*/
-    
-    @include respond(tab-port) { //Remove the padding below 900px
-        padding: 0;
-    }
+  box-sizing: border-box;
+  padding: 2.5rem; /*Creates the nice white border around the entire web page*/
+
+  @include respond(tab-port) {
+    //Remove the padding below 900px
+    padding: 0;
+  }
 }
 
 ::selection {
-    background-color: $color-primary-dark;
-    color: $color-white;
+  background-color: $color-primary-dark;
+  color: $color-white;
 }

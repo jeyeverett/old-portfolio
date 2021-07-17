@@ -8,13 +8,20 @@ body {
 .heading-primary {
   color: $color-white;
   margin-bottom: 6rem;
+  margin-left: 15rem;
   padding-top: 5rem;
-  padding-left: 15rem;
+
+  @include respond(tab-land) {
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
 
   &--main {
     display: block;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 400;
+    letter-spacing: 0.25rem;
+
     animation: moveInLeft 1.25s ease-out;
 
     @include respond(tab-land) {
@@ -23,7 +30,6 @@ body {
 
     @include respond(phone) {
       font-size: 4rem;
-      letter-spacing: 1rem;
     }
   }
 
@@ -32,11 +38,12 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    width: 35%;
+    width: 45%;
     animation: moveInRight 1.25s ease-out;
 
     @include respond(tab-land) {
       font-size: 1.4rem;
+      font-weight: 400;
       letter-spacing: 0.2rem;
     }
 
@@ -45,6 +52,7 @@ body {
     }
 
     @include respond(phone) {
+      font-size: 1.6rem;
       width: 75%;
     }
   }
@@ -79,6 +87,12 @@ body {
     font-size: 2.5rem;
     padding: 0 2rem;
   }
+
+  &__contact {
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 .heading-tertiary {
@@ -90,6 +104,7 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+  color: rgba($color: $color-primary-dark, $alpha: 1);
   &:not(:last-child) {
     margin-bottom: 3rem;
   }

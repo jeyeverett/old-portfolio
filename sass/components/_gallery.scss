@@ -25,6 +25,9 @@
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/96/000000/nodejs.png');
         }
+        @include respond(xs) {
+          content: url('https://img.icons8.com/color/48/000000/nodejs.png');
+        }
       }
     }
 
@@ -35,6 +38,9 @@
         content: url('https://img.icons8.com/color/240/000000/amazon-web-services.png');
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/144/000000/amazon-web-services.png');
+        }
+        @include respond(phone) {
+          content: url('https://img.icons8.com/color/96/000000/amazon-web-services.png');
         }
       }
     }
@@ -69,6 +75,9 @@
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/96/000000/mongodb.png');
         }
+        @include respond(xs) {
+          content: url('https://img.icons8.com/color/72/000000/mongodb.png');
+        }
       }
     }
 
@@ -79,6 +88,9 @@
         content: url('https://img.icons8.com/color/144/000000/javascript--v1.png');
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/96/000000/javascript--v1.png');
+        }
+        @include respond(phone) {
+          content: url('https://img.icons8.com/color/48/000000/javascript--v1.png');
         }
       }
     }
@@ -91,6 +103,9 @@
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/48/000000/bootstrap.png');
         }
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/36/000000/bootstrap.png');
+        }
       }
     }
 
@@ -101,6 +116,9 @@
         content: url('https://img.icons8.com/plasticine/200/000000/react.png');
         @include respond(tab-port) {
           content: url('https://img.icons8.com/plasticine/100/000000/react.png');
+        }
+        @include respond(xs) {
+          content: url('https://img.icons8.com/plasticine/56/000000/react.png');
         }
       }
     }
@@ -135,6 +153,9 @@
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/96/000000/html-5--v1.png');
         }
+        @include respond(phone) {
+          content: url('https://img.icons8.com/color/48/000000/html-5--v1.png');
+        }
       }
     }
 
@@ -156,6 +177,9 @@
         content: url('https://img.icons8.com/color/240/000000/npm.png');
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/144/000000/npm.png');
+        }
+        @include respond(xs) {
+          content: url('https://img.icons8.com/color/96/000000/npm.png');
         }
       }
     }

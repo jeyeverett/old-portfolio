@@ -5,7 +5,7 @@
   font-size: 1.4rem;
 
   @include respond(tab-port) {
-    padding: 8rem 0;
+    padding: 5rem 0 2rem 0;
   }
 
   &__logo {
@@ -83,7 +83,6 @@
 
       @include respond(tab-land) {
         &:link:last-child {
-          margin-top: 1rem;
           text-align: left;
         }
       }

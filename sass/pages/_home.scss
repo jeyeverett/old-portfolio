@@ -3,7 +3,7 @@
   padding: 20rem 5rem 10rem 5rem;
 
   @include respond(tab-port) {
-    padding: 20rem 0;
+    padding: 20rem 0 10rem 0;
   }
 }
 
@@ -56,8 +56,8 @@
   padding: 15rem 5rem;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary-light,
-    $color-primary-dark
+    $color-primary-dark,
+    $color-primary-light
   );
 
   @include respond(tab-port) {
@@ -70,7 +70,7 @@
     105deg,
     rgba($color-white, 0.9) 0%,
     rgba($color-white, 0.9) 42.5%,
-    rgba($color-primary-dark, 0.5) 42.5%
+    rgba($color-primary, 0.5) 42.5%
   );
   background-size: cover;
   border-radius: 3px;
@@ -83,22 +83,20 @@
 
   @include respond(tab-land) {
     background-image: linear-gradient(
-        105deg,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 60%,
-        transparent 60%
-      ),
-      url('../img/nat-10.jpg');
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 60%,
+      transparent 60%
+    );
     background-size: cover;
   }
 
   @include respond(tab-port) {
     background-image: linear-gradient(
-        to right,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 100%
-      ),
-      url('../img/nat-10.jpg');
+      to right,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 100%
+    );
     background-size: cover;
   }
 
