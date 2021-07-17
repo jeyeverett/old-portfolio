@@ -324,45 +324,46 @@
           <img class="gallery__item--1-img" alt="nodejs" />
         </figure>
         <figure class="gallery__item gallery__item--2">
-          <img class="gallery__item--2-img" />
+          <img class="gallery__item--2-img" alt="aws" />
         </figure>
         <figure class="gallery__item gallery__item--3">
-          <img class="gallery__item--3-img" />
+          <img class="gallery__item--3-img" alt="pogstresql" />
         </figure>
         <figure class="gallery__item gallery__item--4">
           <img
             src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
+            alt="expressjs"
           />
         </figure>
         <figure class="gallery__item gallery__item--5">
-          <img class="gallery__item--5-img" />
+          <img class="gallery__item--5-img" alt="mongodb" />
         </figure>
         <figure class="gallery__item gallery__item--6">
-          <img class="gallery__item--6-img" />
+          <img class="gallery__item--6-img" alt="javascript" />
         </figure>
         <figure class="gallery__item gallery__item--7">
-          <img class="gallery__item--7-img" />
+          <img class="gallery__item--7-img" alt="bootstrap" />
         </figure>
         <figure class="gallery__item gallery__item--8">
-          <img class="gallery__item--8-img" />
+          <img class="gallery__item--8-img" alt="react" />
         </figure>
         <figure class="gallery__item gallery__item--9">
-          <img class="gallery__item--9-img" />
+          <img class="gallery__item--9-img" alt="firebase" />
         </figure>
         <figure class="gallery__item gallery__item--10">
-          <img class="gallery__item--10-img" />
+          <img class="gallery__item--10-img" alt="css3" />
         </figure>
         <figure class="gallery__item gallery__item--11">
-          <img class="gallery__item--11-img" />
+          <img class="gallery__item--11-img" alt="html5" />
         </figure>
         <figure class="gallery__item gallery__item--12">
-          <img class="gallery__item--12-img" />
+          <img class="gallery__item--12-img" alt="sass" />
         </figure>
         <figure class="gallery__item gallery__item--13">
-          <img class="gallery__item--13-img" />
+          <img class="gallery__item--13-img" alt="npm" />
         </figure>
         <figure class="gallery__item gallery__item--14">
-          <img class="gallery__item--14-img" />
+          <img class="gallery__item--14-img" alt="github" />
         </figure>
       </section>
       <section class="section-book" id="contact">
@@ -423,9 +424,7 @@
                                     </div>
                                 </div> -->
                 <div class="form__group u-center-text">
-                  <button class="btn btn--green form__btn">
-                    Submit &rarr;
-                  </button>
+                  <button class="btn btn--green form__btn">Send &rarr;</button>
                 </div>
               </form>
             </div>
@@ -519,16 +518,21 @@
       let myCheckbox = document.getElementById('nav-toggle');
       let nav = document.querySelector('.navigation__list');
       let checkbox = document.getElementById('nav-toggle');
+      let body = document.querySelector('body');
+      let backToTop = document.querySelector('.backToTop');
+      body.removeChild(backToTop);
 
       const scrollFunc = function () {
         var y = window.scrollY;
         if (y >= 100) {
           myID.className = 'navigation__button show';
           myButton.className = 'navigation__button show';
+          body.appendChild(backToTop);
         } else {
           myID.className = 'navigation__button hide';
           myButton.className = 'navigation__button hide';
           myCheckbox.checked = false;
+          if (body.contains(backToTop)) body.removeChild(backToTop);
         }
       };
 
