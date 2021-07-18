@@ -103,6 +103,9 @@ body {
     .heading-primary {
       margin-top: 5rem;
       margin-left: 10rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-primary {
+      margin-top: 0; } }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -295,18 +298,13 @@ u-text-white {
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .aws__badge:hover {
       outline: 1rem solid #1379a8;
-      transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      transform: translateY(-3px);
       z-index: 20; }
       @media only screen and (max-width: 56.25em) {
         .aws__badge:hover {
           outline: 0.5rem solid #1379a8;
           box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); } }
-  .aws:hover .aws__photo:not(:hover) {
-    transform: scale(0.95); }
-    @media only screen and (max-width: 56.25em) {
-      .aws:hover .aws__photo:not(:hover) {
-        transform: scale(1.2); } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -315,8 +313,7 @@ u-text-white {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s;
-  height: minmax(min-content, 35rem); }
+  transition: transform 0.3s; }
   @media only screen and (max-width: 75em) {
     .feature-box {
       padding: 2rem; } }
@@ -333,11 +330,15 @@ u-text-white {
     color: transparent; }
     .feature-box__icon:not(:last-of-type) {
       margin-right: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .feature-box__icon {
+        font-size: 5rem; } }
     @media only screen and (max-width: 56.25em) {
       .feature-box__icon {
         margin: 0; } }
   .feature-box__text {
-    color: rgba(8, 55, 77, 0.8); }
+    color: rgba(8, 55, 77, 0.8);
+    width: 100%; }
     .feature-box__text--caption {
       margin-top: 2rem; }
   .feature-box:hover {
@@ -909,7 +910,7 @@ u-text-white {
 
 .section-book {
   padding: 15rem 5rem;
-  background-image: linear-gradient(to right bottom, #08374d, #1cb7ff); }
+  background-image: linear-gradient(to bottom, #1379a8, #08374d); }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
@@ -1037,7 +1038,7 @@ u-text-white {
       height: 50%; } }
 
 .footer {
-  background-color: #333;
+  background-image: linear-gradient(to bottom, #08374d, #333);
   color: #f7f7f7;
   padding: 5rem 0 2rem 0;
   font-size: 1.4rem; }
@@ -1087,7 +1088,6 @@ u-text-white {
       margin-right: 1.5rem; }
   .footer__link, .footer__link:link, .footer__linkvisited {
     color: #f7f7f7;
-    background-color: #333;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;

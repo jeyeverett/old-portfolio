@@ -16,6 +16,10 @@ body {
     margin-left: 10rem;
   }
 
+  @include respond(xs) {
+    margin-top: 0;
+  }
+
   &--main {
     display: block;
     font-size: 6rem;

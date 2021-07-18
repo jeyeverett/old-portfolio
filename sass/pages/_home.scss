@@ -55,9 +55,9 @@
 .section-book {
   padding: 15rem 5rem;
   background-image: linear-gradient(
-    to right bottom,
-    $color-primary-dark,
-    $color-primary-light
+    to bottom,
+    $color-primary,
+    $color-primary-dark
   );
 
   @include respond(tab-port) {

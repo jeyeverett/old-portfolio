@@ -6,7 +6,6 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
-  height: minmax(min-content, 35rem);
 
   @include respond(tab-land) {
     padding: 2rem;
@@ -33,6 +32,10 @@
       margin-right: 2rem;
     }
 
+    @include respond(tab-land) {
+      font-size: 5rem;
+    }
+
     @include respond(tab-port) {
       margin: 0;
     }
@@ -40,6 +43,7 @@
 
   &__text {
     color: rgba($color: $color-primary-dark, $alpha: 0.8);
+    width: 100%;
     &--caption {
       margin-top: 2rem;
     }
