@@ -218,7 +218,6 @@ u-text-white {
   margin-left: 4rem !important; }
 
 .btn, .btn:link, .btn:visited {
-  text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 3rem;
   border-radius: 0.5rem;
