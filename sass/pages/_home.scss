@@ -105,20 +105,15 @@
   }
 
   &__form {
-    width: 50%;
-    min-width: 335px;
+    width: 60%;
     padding: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @include respond(tab-land) {
-      width: 60%;
-    }
-
     @include respond(tab-port) {
       width: 100%;
-      min-width: 0;
+      padding: 5.75rem;
     }
   }
 }

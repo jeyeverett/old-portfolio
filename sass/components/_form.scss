@@ -14,10 +14,13 @@
     padding: 1.5rem 2rem;
     border-radius: 2px;
     border: none;
-    border-bottom: 3px solid transparent; //If we didn't add this then the elements would be pushed down on focus because we are adding a border there
+    border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+    }
 
     &:focus {
       outline: none;
@@ -32,21 +35,23 @@
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
     }
-
-    @include respond(phone) {
-      width: 100%;
-    }
   }
 
   &__textarea {
     width: 85%;
     height: 15rem;
+    margin-top: 4rem;
     resize: none;
+
+    @include respond(tab-land) {
+      margin-top: 2rem;
+    }
 
     @include respond(tab-port) {
       width: 75%;
       height: 15rem;
       transform: translateY(-10rem);
+      margin-top: 0.5rem;
     }
   }
 

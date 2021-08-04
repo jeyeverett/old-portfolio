@@ -601,18 +601,20 @@ u-text-white {
       border-bottom: 3px solid #a0a397; }
     .form__input::-webkit-input-placeholder {
       color: #999; }
-    @media only screen and (max-width: 37.5em) {
-      .form__input {
-        width: 100%; } }
   .form__textarea {
     width: 85%;
     height: 15rem;
+    margin-top: 4rem;
     resize: none; }
+    @media only screen and (max-width: 75em) {
+      .form__textarea {
+        margin-top: 2rem; } }
     @media only screen and (max-width: 56.25em) {
       .form__textarea {
         width: 75%;
         height: 15rem;
-        transform: translateY(-10rem); } }
+        transform: translateY(-10rem);
+        margin-top: 0.5rem; } }
   .form__btn {
     text-transform: none; }
     @media only screen and (max-width: 56.25em) {
@@ -868,7 +870,7 @@ u-text-white {
     grid-column: 4 / span 1;
     grid-row: 6 / span 2; }
     .gallery__item--12-img {
-      content: url("https://img.icons8.com/color/96/000000/sass.png"); }
+      content: url("https://img.icons8.com/color/144/000000/sass.png"); }
       @media only screen and (max-width: 56.25em) {
         .gallery__item--12-img {
           content: url("https://img.icons8.com/color/48/000000/sass.png"); } }
@@ -906,7 +908,7 @@ u-text-white {
     grid-column: 3 / span 2;
     grid-row: 8 / span 3; }
     .gallery__item--16-img {
-      content: url("https://img.icons8.com/color/96/000000/figma--v1.png"); }
+      content: url("https://img.icons8.com/color/144/000000/figma--v1.png"); }
       @media only screen and (max-width: 56.25em) {
         .gallery__item--16-img {
           content: url("https://img.icons8.com/color/48/000000/figma--v1.png"); } }
@@ -923,15 +925,15 @@ u-text-white {
           content: url("https://img.icons8.com/color/48/000000/graphql.png"); } }
       @media only screen and (max-width: 56.25em) {
         .gallery__item--17-img {
-          content: url("https://img.icons8.com/color/24/000000/graphql.png"); } }
+          content: url("https://img.icons8.com/color/30/000000/graphql.png"); } }
   .gallery__item--18 {
     grid-column: 6 / span 2;
     grid-row: 8 / span 2; }
     .gallery__item--18-img {
-      content: url("https://img.icons8.com/color/144/000000/git.png"); }
+      content: url("https://img.icons8.com/color/240/000000/git.png"); }
       @media only screen and (max-width: 56.25em) {
         .gallery__item--18-img {
-          content: url("https://img.icons8.com/color/96/000000/git.png"); } }
+          content: url("https://img.icons8.com/color/144/000000/git.png"); } }
       @media only screen and (max-width: 25em) {
         .gallery__item--18-img {
           content: url("https://img.icons8.com/color/48/000000/git.png"); } }
@@ -939,10 +941,10 @@ u-text-white {
     grid-column: 8 / span 1;
     grid-row: 8 / span 3; }
     .gallery__item--19-img {
-      content: url("https://img.icons8.com/color/96/000000/firebase.png"); }
+      content: url("https://img.icons8.com/color/96/000000/redis.png"); }
       @media only screen and (max-width: 56.25em) {
         .gallery__item--19-img {
-          content: url("https://img.icons8.com/color/48/000000/firebase.png"); } }
+          content: url("https://img.icons8.com/color/28/000000/redis.png"); } }
   .gallery__img {
     font-size: 5rem;
     color: purple; }
@@ -1018,19 +1020,15 @@ u-text-white {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
       background-size: cover; } }
   .book__form {
-    width: 50%;
-    min-width: 335px;
+    width: 60%;
     padding: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    @media only screen and (max-width: 75em) {
-      .book__form {
-        width: 60%; } }
     @media only screen and (max-width: 56.25em) {
       .book__form {
         width: 100%;
-        min-width: 0; } }
+        padding: 5.75rem; } }
 
 .backToTop {
   position: fixed;
@@ -1124,8 +1122,7 @@ u-text-white {
       right: 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .selfie {
-      height: 40%;
-      right: 1rem; } }
+      display: none; } }
 
 .footer {
   background-image: linear-gradient(to bottom, #08374d, #333);
@@ -1151,7 +1148,6 @@ u-text-white {
         margin-bottom: 6rem; } }
     .footer__logo-box--caption {
       text-align: center;
-      margin-left: 2rem;
       width: 50%; }
       .footer__logo-box--caption span {
         color: rgba(255, 255, 255, 0.8); }

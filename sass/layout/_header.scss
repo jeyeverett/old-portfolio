@@ -104,7 +104,6 @@
   }
 
   @include respond(phone) {
-    height: 40%;
-    right: 1rem;
+    display: none;
   }
 }
