@@ -67,6 +67,10 @@
   @include respond(tab-port) {
     padding: 10rem 0;
   }
+
+  @include respond(phone) {
+    padding: 7.5rem 0;
+  }
 }
 
 .book {

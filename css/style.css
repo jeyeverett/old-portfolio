@@ -156,6 +156,9 @@ body {
   @media only screen and (max-width: 75em) {
     .heading-secondary__contact {
       font-size: 2.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary__contact {
+      font-size: 3rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -615,6 +618,9 @@ u-text-white {
         height: 15rem;
         transform: translateY(-10rem);
         margin-top: 0.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .form__textarea {
+        transform: translateY(-9rem); } }
   .form__btn {
     text-transform: none; }
     @media only screen and (max-width: 56.25em) {
@@ -1001,6 +1007,9 @@ u-text-white {
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-book {
+      padding: 7.5rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 42.5%, rgba(19, 121, 168, 0.5) 42.5%);
@@ -1132,6 +1141,9 @@ u-text-white {
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 5rem 0 2rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 0 0 2rem 0; } }
   .footer__logo {
     width: 15rem;
     height: auto;

@@ -53,6 +53,10 @@
       transform: translateY(-10rem);
       margin-top: 0.5rem;
     }
+
+    @include respond(tab-port) {
+      transform: translateY(-9rem);
+    }
   }
 
   &__btn {
