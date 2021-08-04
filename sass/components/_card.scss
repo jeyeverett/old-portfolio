@@ -3,10 +3,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 48rem;
 
   &__side {
-    height: 52rem;
+    height: 48rem;
     transition: all 0.5s ease;
     position: absolute;
     top: 0;
@@ -26,11 +26,7 @@
       transform: rotateY(180deg);
 
       &--1 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary-dark
-        );
+        background-color: $color-primary-dark;
       }
 
       &--2 {
@@ -62,8 +58,9 @@
   //FRONT SIDE STYLING
   &__picture {
     background-size: cover;
-    height: 23rem;
-    background-position: center;
+    background-repeat: no-repeat;
+    height: 18rem;
+    background-position: top;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -71,11 +68,7 @@
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: /*url('../img/coast2coast.png'),*/ linear-gradient(
-        to right bottom,
-        $color-primary-light,
-        $color-primary-dark
-      );
+      background-image: url('../img/boox_small.png');
     }
     &--2 {
       background-image: /*url('../img/nat-6-small.jpg'),*/ linear-gradient(
@@ -116,6 +109,9 @@
         rgba($color-primary-light, 0.85),
         rgba($color-primary-dark, 0.85)
       );
+      text-transform: none;
+      font-family: 'Comfortaa', 'Montserrat';
+      font-weight: 500;
     }
     &--2 {
       background-image: linear-gradient(
@@ -157,17 +153,19 @@
   &__cta {
     @include absCenter;
     text-align: center;
-    width: 90%;
+    padding: 2rem;
+    width: 100%;
   }
 
   &__price-box {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     color: $color-white;
   }
 
   &__price-only {
     font-size: 1.4rem;
-    text-transform: uppercase;
+    text-align: left;
+    padding: 0 2rem;
   }
 
   &__price-value {

@@ -251,6 +251,7 @@ u-text-white {
 .btn.btn--contact {
   margin-top: 5rem;
   color: #1379a8;
+  font-weight: 500;
   background-color: #fff;
   transition: transform 0.2s; }
   .btn.btn--contact:hover {
@@ -380,9 +381,9 @@ u-text-white {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 48rem; }
   .card__side {
-    height: 52rem;
+    height: 48rem;
     transition: all 0.5s ease;
     position: absolute;
     top: 0;
@@ -398,7 +399,7 @@ u-text-white {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back--1 {
-        background-image: linear-gradient(to right bottom, #1cb7ff, #08374d); }
+        background-color: #08374d; }
       .card__side--back--2 {
         background-image: linear-gradient(to right bottom, #1cb7ff, #08374d); }
       .card__side--back--3 {
@@ -409,15 +410,16 @@ u-text-white {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 23rem;
-    background-position: center;
+    background-repeat: no-repeat;
+    height: 18rem;
+    background-position: top;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #1cb7ff, #08374d); }
+      background-image: url("../img/boox_small.png"); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #1cb7ff, #08374d); }
     .card__picture--3 {
@@ -437,7 +439,10 @@ u-text-white {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(28, 183, 255, 0.85), rgba(8, 55, 77, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(28, 183, 255, 0.85), rgba(8, 55, 77, 0.85));
+      text-transform: none;
+      font-family: 'Comfortaa', 'Montserrat';
+      font-weight: 500; }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(28, 183, 255, 0.85), rgba(8, 55, 77, 0.85)); }
     .card__heading-span--3 {
@@ -460,13 +465,15 @@ u-text-white {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 90%; }
+    padding: 2rem;
+    width: 100%; }
   .card__price-box {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     color: #fff; }
   .card__price-only {
     font-size: 1.4rem;
-    text-transform: uppercase; }
+    text-align: left;
+    padding: 0 2rem; }
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
@@ -989,9 +996,6 @@ u-text-white {
         .section-services {
           -webkit-clip-path: none;
           clip-path: none; } } }
-  @media only screen and (max-width: 37.5em) {
-    .section-services {
-      padding: 7.5rem 0; } }
 
 .section-projects {
   background-color: #f7f7f7;
