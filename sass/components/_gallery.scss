@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(
-    10,
+    9,
     5vw
   ); //Could set the row height here, or we could've set the row height of the container. This allows the gallery grid to shrink in height when the window shrinks in width, thus maintaining its aspect ratio
   grid-gap: 1.5rem;

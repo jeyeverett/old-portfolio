@@ -16,6 +16,11 @@ body {
     margin-left: 10rem;
   }
 
+  @include respond(tab-port) {
+    margin-top: 3rem;
+    margin-left: 7.5rem;
+  }
+
   @include respond(phone) {
     margin-left: 5rem;
   }
@@ -73,7 +78,7 @@ body {
   transition: all 0.2s;
 
   @include respond(tab-port) {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   @include respond(phone) {
@@ -86,7 +91,7 @@ body {
     }
 
     @include respond(tab-port) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
   }
 }

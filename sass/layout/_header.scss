@@ -99,8 +99,8 @@
 
   @include respond(tab-port) {
     bottom: 0rem;
-    height: 75%;
-    right: 5rem;
+    height: 70%;
+    right: 1rem;
   }
 
   @include respond(phone) {
