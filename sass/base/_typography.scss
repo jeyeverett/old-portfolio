@@ -35,10 +35,6 @@ body {
     @include respond(tab-land) {
       font-size: 4.5rem;
     }
-
-    @include respond(phone) {
-      font-size: 4rem;
-    }
   }
 
   &--sub {
@@ -76,24 +72,11 @@ body {
   letter-spacing: 2px;
   transition: all 0.2s;
 
-  // @supports (background-clip: text) or (-webkit-background-clip: text) {
-  //   background-image: linear-gradient(
-  //     to right,
-  //     $color-primary-dark,
-  //     $color-primary-light,
-  //     $color-primary-dark
-  //   );
-  //   -webkit-background-clip: text;
-  //   background-clip: text;
-  //   color: transparent;
-  // }
-
   @include respond(tab-port) {
     font-size: 3rem;
   }
 
   @include respond(phone) {
-    font-size: 2.5rem;
     padding: 0 2rem;
   }
 

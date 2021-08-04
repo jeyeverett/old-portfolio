@@ -118,9 +118,6 @@ body {
     @media only screen and (max-width: 75em) {
       .heading-primary--main {
         font-size: 4.5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--main {
-        font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 1.5rem;
@@ -155,7 +152,6 @@ body {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2.5rem;
       padding: 0 2rem; } }
   @media only screen and (max-width: 75em) {
     .heading-secondary__contact {
@@ -336,6 +332,9 @@ u-text-white {
   @media only screen and (max-width: 56.25em) {
     .feature-box {
       height: 30rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .feature-box {
+      height: min-content; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -1310,7 +1309,7 @@ u-text-white {
   margin-top: 3.5rem; }
   @media only screen and (max-width: 37.5em) {
     .navigation__icon {
-      margin-top: 2.375rem; } }
+      margin-top: 2.4rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
