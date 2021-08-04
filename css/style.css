@@ -183,6 +183,9 @@ u-text-white {
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
@@ -239,7 +242,12 @@ u-text-white {
     opacity: 0; }
 
 .btn.btn--contact {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  color: #1379a8;
+  background-color: #fff;
+  transition: transform 0.2s; }
+  .btn.btn--contact:hover {
+    transform: scale(1.1); }
   @media only screen and (max-width: 37.5em) {
     .btn.btn--contact {
       margin-top: 3.5rem; } }
@@ -570,23 +578,21 @@ u-text-white {
 
 .form {
   width: 100%; }
-  .form__group:not(:last-child) {
-    margin-bottom: 2rem; }
+  .form__group--text {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .form__input {
     font-size: 1.5rem;
     font-family: inherit;
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-size: rgba(255, 255, 255, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
     transition: all 0.3s; }
-    @media only screen and (max-width: 37.5em) {
-      .form__input {
-        width: 100%; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -595,18 +601,18 @@ u-text-white {
       border-bottom: 3px solid #a0a397; }
     .form__input::-webkit-input-placeholder {
       color: #999; }
+    @media only screen and (max-width: 37.5em) {
+      .form__input {
+        width: 100%; } }
   .form__textarea {
-    margin-top: 16rem;
-    margin-left: 5rem;
     width: 85%;
     height: 15rem;
     resize: none; }
     @media only screen and (max-width: 56.25em) {
       .form__textarea {
         width: 75%;
-        margin: 0 auto;
         height: 15rem;
-        transform: translateY(-11rem); } }
+        transform: translateY(-10rem); } }
   .form__btn {
     text-transform: none; }
     @media only screen and (max-width: 56.25em) {
@@ -616,7 +622,6 @@ u-text-white {
     font-size: 1.2rem;
     font-weight: 400;
     margin-left: 2rem;
-    margin-top: 0.7rem;
     display: block;
     transition: all 0.3s; }
   .form__input:placeholder-shown + .form__label {
@@ -784,7 +789,7 @@ u-text-white {
           height: 6rem; } }
       @media only screen and (max-width: 37.5em) {
         .gallery__item--4 img {
-          height: 4rem; } }
+          height: 3.5rem; } }
   .gallery__item--5 {
     grid-column: 1 / span 2;
     grid-row: 3 / span 3; }
@@ -948,6 +953,9 @@ u-text-white {
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0 10rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-about {
+      padding-bottom: 5rem; } }
 
 .section-services {
   padding: 20rem 5rem;
@@ -1012,7 +1020,10 @@ u-text-white {
   .book__form {
     width: 50%;
     min-width: 335px;
-    padding: 6rem; }
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     @media only screen and (max-width: 75em) {
       .book__form {
         width: 60%; } }
@@ -1193,16 +1204,19 @@ u-text-white {
         width: 100%;
         float: none;
         margin-right: 0; } }
-  .footer__icons--1 {
-    content: url("https://img.icons8.com/color/48/000000/linkedin.png"); }
-    @media only screen and (max-width: 37.5em) {
-      .footer__icons--1 {
-        content: url("https://img.icons8.com/color/24/000000/linkedin.png"); } }
-  .footer__icons--2 {
-    content: url("https://img.icons8.com/fluent-systems-regular/48/000000/github.png"); }
-    @media only screen and (max-width: 37.5em) {
-      .footer__icons--2 {
-        content: url("https://img.icons8.com/fluent-systems-regular/24/000000/github.png"); } }
+  .footer__icons {
+    display: flex;
+    justify-content: center; }
+    .footer__icons--1 {
+      content: url("https://img.icons8.com/color/48/000000/linkedin.png"); }
+      @media only screen and (max-width: 37.5em) {
+        .footer__icons--1 {
+          content: url("https://img.icons8.com/color/24/000000/linkedin.png"); } }
+    .footer__icons--2 {
+      content: url("https://img.icons8.com/fluent-systems-regular/48/000000/github.png"); }
+      @media only screen and (max-width: 37.5em) {
+        .footer__icons--2 {
+          content: url("https://img.icons8.com/fluent-systems-regular/24/000000/github.png"); } }
 
 .navigation__checkbox {
   display: none; }

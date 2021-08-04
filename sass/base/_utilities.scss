@@ -16,6 +16,10 @@ u-text-white {
   @include respond(tab-port) {
     margin-bottom: 5rem !important;
   }
+
+  @include respond(phone) {
+    margin-bottom: 3rem !important;
+  }
 }
 
 .u-margin-bottom-medium {

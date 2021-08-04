@@ -117,6 +117,8 @@
   }
 
   &__icons {
+    display: flex;
+    justify-content: center;
     &--1 {
       content: url('https://img.icons8.com/color/48/000000/linkedin.png');
       @include respond(phone) {

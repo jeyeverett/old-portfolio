@@ -1,8 +1,10 @@
 .form {
   width: 100%;
 
-  &__group:not(:last-child) {
-    margin-bottom: 2rem;
+  &__group--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__input {
@@ -11,16 +13,11 @@
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-size: rgba($color-white, 0.5);
     border: none;
     border-bottom: 3px solid transparent; //If we didn't add this then the elements would be pushed down on focus because we are adding a border there
     width: 100%;
     display: block;
     transition: all 0.3s;
-
-    @include respond(phone) {
-      width: 100%;
-    }
 
     &:focus {
       outline: none;
@@ -35,20 +32,21 @@
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
     }
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__textarea {
-    margin-top: 16rem;
-    margin-left: 5rem;
     width: 85%;
     height: 15rem;
     resize: none;
 
     @include respond(tab-port) {
       width: 75%;
-      margin: 0 auto;
       height: 15rem;
-      transform: translateY(-11rem);
+      transform: translateY(-10rem);
     }
   }
 
@@ -63,14 +61,13 @@
     font-size: 1.2rem;
     font-weight: 400;
     margin-left: 2rem;
-    margin-top: 0.7rem;
     display: block;
     transition: all 0.3s;
   }
 
   &__input:placeholder-shown + &__label {
-    opacity: 0; //We use opacity 0 because we want to animate the labels appearing
-    visibility: hidden; //We use this because we don't want the labels shown when the input is not selected
+    opacity: 0;
+    visibility: hidden;
     transform: translateY(-4rem);
   }
 }

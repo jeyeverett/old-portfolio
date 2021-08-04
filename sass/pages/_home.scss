@@ -5,6 +5,10 @@
   @include respond(tab-port) {
     padding: 20rem 0 10rem 0;
   }
+
+  @include respond(phone) {
+    padding-bottom: 5rem;
+  }
 }
 
 .section-services {
@@ -104,6 +108,9 @@
     width: 50%;
     min-width: 335px;
     padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include respond(tab-land) {
       width: 60%;
