@@ -290,8 +290,9 @@ u-text-white {
   justify-content: center; }
   @media only screen and (max-width: 37.5em) {
     .aws {
-      flex-direction: column;
-      margin-left: 3rem; } }
+      align-items: center;
+      justify-items: center;
+      flex-direction: column; } }
   .aws__badge {
     width: min-content;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -583,6 +584,9 @@ u-text-white {
     width: 100%;
     display: block;
     transition: all 0.3s; }
+    @media only screen and (max-width: 37.5em) {
+      .form__input {
+        width: 100%; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -843,7 +847,7 @@ u-text-white {
           content: url("https://img.icons8.com/color/48/000000/css3.png"); } }
       @media only screen and (max-width: 37.5em) {
         .gallery__item--10-img {
-          content: url("https://img.icons8.com/color/24/000000/css3.png"); } }
+          content: url("https://img.icons8.com/color/48/000000/css3.png"); } }
   .gallery__item--11 {
     grid-column: 2 / span 2;
     grid-row: 6 / span 2; }
@@ -854,7 +858,7 @@ u-text-white {
           content: url("https://img.icons8.com/color/96/000000/html-5--v1.png"); } }
       @media only screen and (max-width: 37.5em) {
         .gallery__item--11-img {
-          content: url("https://img.icons8.com/color/48/000000/html-5--v1.png"); } }
+          content: url("https://img.icons8.com/color/24/000000/html-5--v1.png"); } }
   .gallery__item--12 {
     grid-column: 4 / span 1;
     grid-row: 6 / span 2; }
@@ -1043,6 +1047,8 @@ u-text-white {
   height: 90vh;
   min-height: 60rem;
   width: 100%;
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #08374d 0%, #08374d 50%, #1379a8);
   background-size: cover;
@@ -1091,13 +1097,7 @@ u-text-white {
     border-radius: 50%;
     cursor: pointer; }
   .header__heading-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    top: 40%;
-    text-align: center; }
+    width: 100%; }
 
 .selfie {
   position: absolute;
@@ -1113,8 +1113,8 @@ u-text-white {
       right: 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .selfie {
-      height: 50%;
-      right: 2.5rem; } }
+      height: 40%;
+      right: 1rem; } }
 
 .footer {
   background-image: linear-gradient(to bottom, #08374d, #333);
@@ -1224,8 +1224,8 @@ u-text-white {
       right: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 3rem;
+      top: 2.5rem;
+      right: 2.5rem;
       height: 5rem;
       width: 5rem; } }
 
@@ -1246,8 +1246,8 @@ u-text-white {
       right: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 3.45rem;
-      right: 3.55rem;
+      top: 2.95rem;
+      right: 3.05rem;
       height: 4rem;
       width: 4rem; } }
 
