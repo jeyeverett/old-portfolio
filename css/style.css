@@ -989,6 +989,9 @@ u-text-white {
         .section-services {
           -webkit-clip-path: none;
           clip-path: none; } } }
+  @media only screen and (max-width: 37.5em) {
+    .section-services {
+      padding: 7.5rem 0; } }
 
 .section-projects {
   background-color: #f7f7f7;

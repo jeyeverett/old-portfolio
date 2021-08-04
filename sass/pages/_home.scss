@@ -35,6 +35,10 @@
       clip-path: none;
     }
   }
+
+  @include respond(phone) {
+    padding: 7.5rem 0;
+  }
 }
 
 .section-projects {
