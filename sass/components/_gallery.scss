@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(
-    7,
+    10,
     5vw
   ); //Could set the row height here, or we could've set the row height of the container. This allows the gallery grid to shrink in height when the window shrinks in width, thus maintaining its aspect ratio
   grid-gap: 1.5rem;
@@ -63,6 +63,9 @@
         height: 8rem;
         @include respond(tab-port) {
           height: 6rem;
+        }
+        @include respond(phone) {
+          height: 4rem;
         }
       }
     }
@@ -142,6 +145,9 @@
         @include respond(tab-port) {
           content: url('https://img.icons8.com/color/48/000000/css3.png');
         }
+        @include respond(phone) {
+          content: url('https://img.icons8.com/color/24/000000/css3.png');
+        }
       }
     }
 
@@ -191,6 +197,73 @@
         content: url('https://img.icons8.com/material-outlined/96/000000/github.png');
         @include respond(tab-port) {
           content: url('https://img.icons8.com/material-outlined/48/000000/github.png');
+        }
+      }
+    }
+
+    &--15 {
+      grid-column: 1 / span 2;
+      grid-row: 8 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/fluency/144/000000/docker.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/fluency/96/000000/docker.png');
+        }
+        @include respond(xs) {
+          content: url('https://img.icons8.com/fluency/48/000000/docker.png');
+        }
+      }
+    }
+
+    &--16 {
+      grid-column: 3 / span 2;
+      grid-row: 8 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/figma--v1.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/figma--v1.png');
+        }
+        @include respond(phone) {
+          content: url('https://img.icons8.com/color/48/000000/figma--v1.png');
+        }
+      }
+    }
+
+    &--17 {
+      grid-column: 5 / span 1;
+      grid-row: 9 / span 1;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/graphql.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/graphql.png');
+        }
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/24/000000/graphql.png');
+        }
+      }
+    }
+
+    &--18 {
+      grid-column: 6 / span 2;
+      grid-row: 8 / span 2;
+      &-img {
+        content: url('https://img.icons8.com/color/144/000000/git.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/96/000000/git.png');
+        }
+        @include respond(xs) {
+          content: url('https://img.icons8.com/color/48/000000/git.png');
+        }
+      }
+    }
+
+    &--19 {
+      grid-column: 8 / span 1;
+      grid-row: 8 / span 3;
+      &-img {
+        content: url('https://img.icons8.com/color/96/000000/firebase.png');
+        @include respond(tab-port) {
+          content: url('https://img.icons8.com/color/48/000000/firebase.png');
         }
       }
     }

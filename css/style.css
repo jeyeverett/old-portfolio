@@ -292,6 +292,10 @@ u-text-white {
 .aws {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .aws {
+      flex-direction: column;
+      margin-left: 3rem; } }
   .aws__badge {
     width: min-content;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -299,6 +303,12 @@ u-text-white {
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 1rem; }
+    .aws__badge:last-child {
+      margin-left: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .aws__badge:last-child {
+          margin-left: 0;
+          margin-top: 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .aws__badge {
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
@@ -724,7 +734,7 @@ u-text-white {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 5vw);
+  grid-template-rows: repeat(10, 5vw);
   grid-gap: 1.5rem;
   padding: 1.5rem;
   align-items: center;
@@ -769,6 +779,9 @@ u-text-white {
       @media only screen and (max-width: 56.25em) {
         .gallery__item--4 img {
           height: 6rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__item--4 img {
+          height: 4rem; } }
   .gallery__item--5 {
     grid-column: 1 / span 2;
     grid-row: 3 / span 3; }
@@ -829,6 +842,9 @@ u-text-white {
       @media only screen and (max-width: 56.25em) {
         .gallery__item--10-img {
           content: url("https://img.icons8.com/color/48/000000/css3.png"); } }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__item--10-img {
+          content: url("https://img.icons8.com/color/24/000000/css3.png"); } }
   .gallery__item--11 {
     grid-column: 2 / span 2;
     grid-row: 6 / span 2; }
@@ -867,6 +883,58 @@ u-text-white {
       @media only screen and (max-width: 56.25em) {
         .gallery__item--14-img {
           content: url("https://img.icons8.com/material-outlined/48/000000/github.png"); } }
+  .gallery__item--15 {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 3; }
+    .gallery__item--15-img {
+      content: url("https://img.icons8.com/fluency/144/000000/docker.png"); }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__item--15-img {
+          content: url("https://img.icons8.com/fluency/96/000000/docker.png"); } }
+      @media only screen and (max-width: 25em) {
+        .gallery__item--15-img {
+          content: url("https://img.icons8.com/fluency/48/000000/docker.png"); } }
+  .gallery__item--16 {
+    grid-column: 3 / span 2;
+    grid-row: 8 / span 3; }
+    .gallery__item--16-img {
+      content: url("https://img.icons8.com/color/96/000000/figma--v1.png"); }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__item--16-img {
+          content: url("https://img.icons8.com/color/48/000000/figma--v1.png"); } }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__item--16-img {
+          content: url("https://img.icons8.com/color/48/000000/figma--v1.png"); } }
+  .gallery__item--17 {
+    grid-column: 5 / span 1;
+    grid-row: 9 / span 1; }
+    .gallery__item--17-img {
+      content: url("https://img.icons8.com/color/96/000000/graphql.png"); }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__item--17-img {
+          content: url("https://img.icons8.com/color/48/000000/graphql.png"); } }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__item--17-img {
+          content: url("https://img.icons8.com/color/24/000000/graphql.png"); } }
+  .gallery__item--18 {
+    grid-column: 6 / span 2;
+    grid-row: 8 / span 2; }
+    .gallery__item--18-img {
+      content: url("https://img.icons8.com/color/144/000000/git.png"); }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__item--18-img {
+          content: url("https://img.icons8.com/color/96/000000/git.png"); } }
+      @media only screen and (max-width: 25em) {
+        .gallery__item--18-img {
+          content: url("https://img.icons8.com/color/48/000000/git.png"); } }
+  .gallery__item--19 {
+    grid-column: 8 / span 1;
+    grid-row: 8 / span 3; }
+    .gallery__item--19-img {
+      content: url("https://img.icons8.com/color/96/000000/firebase.png"); }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__item--19-img {
+          content: url("https://img.icons8.com/color/48/000000/firebase.png"); } }
   .gallery__img {
     font-size: 5rem;
     color: purple; }
