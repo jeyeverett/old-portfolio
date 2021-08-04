@@ -115,4 +115,20 @@
       margin-right: 0;
     }
   }
+
+  &__icons {
+    &--1 {
+      content: url('https://img.icons8.com/color/48/000000/linkedin.png');
+      @include respond(phone) {
+        content: url('https://img.icons8.com/color/24/000000/linkedin.png');
+      }
+    }
+
+    &--2 {
+      content: url('https://img.icons8.com/fluent-systems-regular/48/000000/github.png');
+      @include respond(phone) {
+        content: url('https://img.icons8.com/fluent-systems-regular/24/000000/github.png');
+      }
+    }
+  }
 }

@@ -130,6 +130,12 @@
   color: rgba($color-primary-light, 0.8);
   text-decoration: none;
   transition: color 0.2s;
+  svg {
+    @include respond(phone) {
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 
 .upArrow:hover {

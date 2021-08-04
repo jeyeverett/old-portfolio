@@ -104,7 +104,8 @@
     right: 5rem;
   }
 
-  @include respond(phone-xl) {
+  @include respond(phone) {
     height: 50%;
+    right: 2.5rem;
   }
 }

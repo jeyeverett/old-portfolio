@@ -16,6 +16,10 @@ body {
     margin-left: 10rem;
   }
 
+  @include respond(phone) {
+    margin-left: 5rem;
+  }
+
   @include respond(xs) {
     margin-top: 0;
   }
@@ -58,6 +62,7 @@ body {
     @include respond(phone) {
       font-size: 1.6rem;
       width: 75%;
+      margin-top: 1rem;
     }
   }
 }

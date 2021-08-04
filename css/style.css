@@ -103,6 +103,9 @@ body {
     .heading-primary {
       margin-top: 5rem;
       margin-left: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      margin-left: 5rem; } }
   @media only screen and (max-width: 25em) {
     .heading-primary {
       margin-top: 0; } }
@@ -136,7 +139,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         font-size: 1.6rem;
-        width: 75%; } }
+        width: 75%;
+        margin-top: 1rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -240,6 +244,9 @@ u-text-white {
 
 .btn.btn--contact {
   margin-top: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .btn.btn--contact {
+      margin-top: 3.5rem; } }
 
 .btn:active, .btn:focus {
   outline: none;
@@ -956,6 +963,11 @@ u-text-white {
   color: rgba(28, 183, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s; }
+  @media only screen and (max-width: 37.5em) {
+    .upArrow svg,
+    .upArrow:visited svg {
+      height: 20px;
+      width: 20px; } }
 
 .upArrow:hover {
   color: #08374d; }
@@ -1032,9 +1044,10 @@ u-text-white {
       bottom: 0rem;
       height: 75%;
       right: 5rem; } }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 37.5em) {
     .selfie {
-      height: 50%; } }
+      height: 50%;
+      right: 2.5rem; } }
 
 .footer {
   background-image: linear-gradient(to bottom, #08374d, #333);
@@ -1113,6 +1126,16 @@ u-text-white {
         width: 100%;
         float: none;
         margin-right: 0; } }
+  .footer__icons--1 {
+    content: url("https://img.icons8.com/color/48/000000/linkedin.png"); }
+    @media only screen and (max-width: 37.5em) {
+      .footer__icons--1 {
+        content: url("https://img.icons8.com/color/24/000000/linkedin.png"); } }
+  .footer__icons--2 {
+    content: url("https://img.icons8.com/fluent-systems-regular/48/000000/github.png"); }
+    @media only screen and (max-width: 37.5em) {
+      .footer__icons--2 {
+        content: url("https://img.icons8.com/fluent-systems-regular/24/000000/github.png"); } }
 
 .navigation__checkbox {
   display: none; }
@@ -1135,7 +1158,9 @@ u-text-white {
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
-      right: 3rem; } }
+      right: 3rem;
+      height: 5rem;
+      width: 5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -1155,7 +1180,9 @@ u-text-white {
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.45rem;
-      right: 3.55rem; } }
+      right: 3.55rem;
+      height: 4rem;
+      width: 4rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -1213,11 +1240,18 @@ u-text-white {
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__icon {
+      margin-top: 2.375rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
     background-color: #999;
     display: inline-block; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 2.5rem;
+        height: 1px; } }
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     position: absolute;
@@ -1225,14 +1259,26 @@ u-text-white {
     transition: all 0.2s; }
   .navigation__icon::before {
     top: -0.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon::before {
+        top: -0.6rem; } }
   .navigation__icon::after {
     top: 0.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon::after {
+        top: 0.6rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button:hover .navigation__icon::before {
+      top: -0.8rem; } }
 
 .navigation__button:hover .navigation__icon::after {
   top: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button:hover .navigation__icon::after {
+      top: 0.8rem; } }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }
