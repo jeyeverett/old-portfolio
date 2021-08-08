@@ -106,7 +106,7 @@
     &--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85),
         rgba($color-primary-dark, 0.85)
       );
       text-transform: none;
@@ -116,14 +116,14 @@
     &--2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85),
         rgba($color-primary-dark, 0.85)
       );
     }
     &--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85),
         rgba($color-primary-dark, 0.85)
       );
     }
@@ -153,19 +153,22 @@
   &__cta {
     @include absCenter;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 3rem;
     width: 100%;
   }
 
   &__price-box {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     color: $color-white;
   }
 
-  &__price-only {
-    font-size: 1.4rem;
-    text-align: left;
-    padding: 0 2rem;
+  &__website-description {
+    font-size: 1.2rem;
+    text-align: center;
+    color: $color-black;
+    background-color: rgba($color-white, 0.8);
+    border-radius: 5px;
+    padding: 2rem 3rem;
   }
 
   &__price-value {

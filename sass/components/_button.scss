@@ -53,12 +53,11 @@
   }
 
   &--white {
-    color: $color-primary;
+    color: $color-primary-dark;
     background-color: $color-white;
-
+    transition: transform 0.2s;
     &:hover {
-      color: $color-white;
-      background-color: $color-primary;
+      transform: scale(1.1);
     }
   }
 

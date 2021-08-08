@@ -6,11 +6,12 @@
   align-items: center;
   position: relative;
   background-image: linear-gradient(
-    to right,
-    rgba($color-primary-dark, 1) 0%,
-    rgba($color-primary-dark, 1) 50%,
-    rgba($color-primary, 1)
-  );
+      to right,
+      rgba($color-primary-dark, 0.75) 0%,
+      rgba($color-primary-dark, 0.75) 50%,
+      rgba($color-primary, 0.75)
+    ),
+    url('../img/earth.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -22,16 +23,16 @@
     height: 90vh;
   }
 
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    only screen and (min-width: 75em) {
-    background-image: linear-gradient(
-      to right,
-      rgba($color-primary-dark, 1) 0%,
-      rgba($color-primary-dark, 1) 50%,
-      rgba($color-primary, 1)
-    );
-  }
+  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  //   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  //   only screen and (min-width: 75em) {
+  //   background-image: linear-gradient(
+  //     to right,
+  //     rgba($color-primary-dark, 1) 0%,
+  //     rgba($color-primary-dark, 1) 50%,
+  //     rgba($color-primary, 1)
+  //   );
+  // }
 
   @include respond(tab-land) {
     height: 75vh;
@@ -40,8 +41,8 @@
   @include respond(tab-port) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    background-image: none;
-    background-color: $color-primary-dark;
+    // background-image: none;
+    // background-color: $color-primary-dark;
   }
 
   &__logo-box {

@@ -265,8 +265,7 @@
       }
     }
 
-    &:hover,
-    &:active {
+    &:hover {
       opacity: 1;
       background-position: 100%;
       color: $color-primary-dark;
