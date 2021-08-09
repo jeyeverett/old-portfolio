@@ -222,8 +222,7 @@
   }
 
   @include respond(phone) {
-    top: 2rem;
-    right: 1rem;
+    display: none;
   }
 
   &__list {

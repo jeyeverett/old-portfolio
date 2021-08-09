@@ -115,9 +115,9 @@
   @include respond(phone) {
     display: block;
     position: absolute;
-    top: 1rem;
-    left: 2rem;
-    height: 8rem;
+    top: 2.5rem;
+    left: 2.5rem;
+    height: 5rem;
     content: url('../img/selfie_small.jpg');
     border-radius: 50%;
     box-shadow: $box-shadow;

@@ -1155,9 +1155,9 @@ u-text-white {
     .mobile-selfie {
       display: block;
       position: absolute;
-      top: 1rem;
-      left: 2rem;
-      height: 8rem;
+      top: 2.5rem;
+      left: 2.5rem;
+      height: 5rem;
       content: url("../img/selfie_small.jpg");
       border-radius: 50%;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
@@ -1431,8 +1431,7 @@ u-text-white {
       right: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .index {
-      top: 2rem;
-      right: 1rem; } }
+      display: none; } }
   .index__list {
     list-style: none;
     text-align: center;
