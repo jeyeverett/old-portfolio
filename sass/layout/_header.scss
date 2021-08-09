@@ -95,16 +95,31 @@
   bottom: 7rem;
 
   @include respond(tab-land) {
+    height: 60%;
     bottom: 6rem;
   }
 
   @include respond(tab-port) {
-    bottom: 0rem;
-    height: 70%;
+    bottom: 1.75rem;
+    height: 60%;
     right: 1rem;
   }
 
   @include respond(phone) {
     display: none;
+  }
+}
+
+.mobile-selfie {
+  display: none;
+  @include respond(phone) {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    height: 8rem;
+    content: url('../img/selfie_small.jpg');
+    border-radius: 50%;
+    box-shadow: $box-shadow;
   }
 }

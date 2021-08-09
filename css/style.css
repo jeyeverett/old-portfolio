@@ -88,6 +88,13 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+.on-render {
+  transition: all 400ms ease-in;
+  opacity: 0; }
+
+.on-render.appear {
+  opacity: 1; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -341,8 +348,7 @@ u-text-white {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 75em) {
     .feature-box {
       padding: 2rem; } }
@@ -374,7 +380,7 @@ u-text-white {
     .feature-box__text--caption {
       margin-top: 2rem; }
   .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03);
+    transform: translateY(-1rem) scale(1.02);
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.15); }
 
 .card {
@@ -1026,7 +1032,7 @@ u-text-white {
       padding: 7.5rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 42.5%, rgba(19, 121, 168, 0.5) 42.5%);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 46%, rgba(19, 121, 168, 0.5) 46%);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -1036,7 +1042,7 @@ u-text-white {
       flex-direction: column; } }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 40%);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {
@@ -1132,15 +1138,29 @@ u-text-white {
   bottom: 7rem; }
   @media only screen and (max-width: 75em) {
     .selfie {
+      height: 60%;
       bottom: 6rem; } }
   @media only screen and (max-width: 56.25em) {
     .selfie {
-      bottom: 0rem;
-      height: 70%;
+      bottom: 1.75rem;
+      height: 60%;
       right: 1rem; } }
   @media only screen and (max-width: 37.5em) {
     .selfie {
       display: none; } }
+
+.mobile-selfie {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .mobile-selfie {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      height: 8rem;
+      content: url("../img/selfie_small.jpg");
+      border-radius: 50%;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
 
 .footer {
   background-image: linear-gradient(to bottom, #08374d, #333);

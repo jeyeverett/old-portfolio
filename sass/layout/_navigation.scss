@@ -270,7 +270,7 @@
       background-position: 100%;
       color: $color-primary-dark;
       transform: scale(1.2);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      box-shadow: $box-shadow;
     }
   }
 }
