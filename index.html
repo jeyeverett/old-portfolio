@@ -326,8 +326,8 @@
             </p>
             <!-- <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a> -->
           </div>
-          <div class="col-1-of-2 aws on-render">
-            <div class="aws__badge">
+          <div class="col-1-of-2 aws">
+            <div class="aws__badge on-render">
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
@@ -335,7 +335,7 @@
                 data-share-badge-host="https://www.credly.com"
               ></div>
             </div>
-            <div class="aws__badge">
+            <div class="aws__badge on-render">
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
@@ -596,7 +596,6 @@
 
       window.onload = () => {
         if (window.visualViewport.width <= 600) {
-          console.log('here');
           navBtn.className = 'navigation__button show';
           myButton.className = 'navigation__button show';
         }

@@ -45,6 +45,9 @@
 .on-render {
   transition: all 400ms ease-in;
   opacity: 0;
+  @include respond(phone) {
+    opacity: 1;
+  }
 }
 
 .on-render.appear {

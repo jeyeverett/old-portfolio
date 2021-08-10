@@ -91,6 +91,9 @@ body {
 .on-render {
   transition: all 400ms ease-in;
   opacity: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .on-render {
+      opacity: 1; } }
 
 .on-render.appear {
   opacity: 1; }
