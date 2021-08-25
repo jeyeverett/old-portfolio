@@ -104,9 +104,15 @@ body {
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: $default-font-size-small;
   color: rgba($color: $color-primary-dark, $alpha: 1);
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  &__subtext {
+    display: block;
+    font-size: small;
+    padding: 2rem 3rem;
   }
 }

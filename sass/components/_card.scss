@@ -30,11 +30,7 @@
       }
 
       &--2 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary-dark
-        );
+        background-color: $color-primary-dark;
       }
 
       &--3 {
@@ -71,11 +67,11 @@
       background-image: url('../img/boox_small.png');
     }
     &--2 {
-      background-image: /*url('../img/nat-6-small.jpg'),*/ linear-gradient(
-        to right bottom,
-        $color-primary-light,
-        $color-primary-dark
-      );
+      background-image: url('../img/carrotcart_small.png');
+      background-size: contain;
+      @media screen and (max-width: 600px) {
+        background-size: cover;
+      }
     }
     &--3 {
       background-image: /*url('../img/nat-7-small.jpg'),*/ linear-gradient(
@@ -119,6 +115,9 @@
         rgba($color-primary, 0.85),
         rgba($color-primary-dark, 0.85)
       );
+      text-transform: none;
+
+      font-family: 'Indie Flower', 'Montserrat';
     }
     &--3 {
       background-image: linear-gradient(
@@ -163,12 +162,22 @@
   }
 
   &__website-description {
+    list-style-type: disc;
     font-size: 1.2rem;
-    text-align: center;
-    color: $color-black;
+    text-align: left;
+    color: $color-primary-dark;
     background-color: rgba($color-white, 0.8);
     border-radius: 5px;
     padding: 2rem 3rem;
+    span {
+      font-weight: bold;
+    }
+    li {
+      &:first-of-type {
+        margin-top: 1rem;
+      }
+      margin-left: 1rem;
+    }
   }
 
   &__price-value {

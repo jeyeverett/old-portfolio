@@ -23,11 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&family=Indie+Flower&family=Comfortaa:wght@500"
       rel="stylesheet"
     />
     <link
@@ -57,7 +53,9 @@
             <a href="#about" class="index__link">About</a>
           </li>
           <li class="index__item">
-            <a href="#contact" class="index__link">Contact</a>
+            <a href="#contact" class="index__link index__link-contact"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -103,23 +101,17 @@
           >
         </div>
       </div>
-      <img
-        class="selfie on-render"
-        src="img/self_full.png"
-        alt="jeysenfreedman"
-      />
-      <img class="mobile-selfie on-render" alt="jeysenfreedman" />
+      <img class="selfie" src="img/self_full.png" alt="jeysenfreedman" />
+      <img class="mobile-selfie" alt="jeysenfreedman" />
     </header>
     <main>
       <section class="section-projects">
         <div class="u-center-text u-margin-bottom-medium" id="projects">
-          <h2 class="heading-secondary on-render" id="section-tours">
-            Projects
-          </h2>
+          <h2 class="heading-secondary" id="section-tours">Projects</h2>
         </div>
         <div class="row">
           <div class="col-1-of-3">
-            <div class="card on-render">
+            <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--1">&nbsp;</div>
                 <h4 class="card__heading">
@@ -146,15 +138,19 @@
                     >
                       boox
                     </p>
-                    <p class="card__website-description">
-                      "boox" is a full-stack web application built to allow
-                      users to exchange, borrow and discuss books anywhere in
-                      the world. It implements a variety of modern technologies
-                      including a responsive design, authentication and
-                      authorization, user registration and login/logout, RESTful
-                      API, NoSQL database, GeoData, real-time chat via socket.io
-                      and much more!
-                    </p>
+                    <ul class="card__website-description">
+                      <span
+                        >A full-stack web app built for users to exchange,
+                        borrow and discuss books anywhere in the world</span
+                      >
+                      <li>Built with Bootstrap</li>
+                      <li>Responsive design</li>
+                      <li>Authentication and authorization</li>
+                      <li>RESTful API</li>
+                      <li>NoSQL MongoDB database</li>
+                      <li>MapBoxGL and GeoJSON</li>
+                      <li>Real-time chat with WebSockets and socket.io</li>
+                    </ul>
                   </div>
                   <span style="display: flex; margin-bottom: 4rem">
                     <a
@@ -164,7 +160,7 @@
                       >Website</a
                     >
                     <a
-                      href="https://github.com/jeyeverett/coast2coastcamping"
+                      href="https://github.com/jeyeverett/boox"
                       class="btn btn--white"
                       target="_blank"
                       >Github</a
@@ -175,38 +171,69 @@
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="card on-render">
+            <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--2">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--2">
-                    Facial Recognition
+                    carrotcart
                   </span>
                 </h4>
                 <div class="card__details">
                   <ul>
-                    <li>HTML & SCSS</li>
-                    <li>JavaScript</li>
-                    <li>ReactJS</li>
+                    <li>SCSS & StyledComponents</li>
+                    <li>JavaScript & JSX</li>
+                    <li>ReactJS and Redux</li>
                     <li>NodeJS & ExpressJS</li>
-                    <li>PostgreSQL</li>
+                    <li>Firebase Firestore</li>
                   </ul>
                 </div>
               </div>
               <div class="card__side card__side--back card__side--back--2">
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">$597</p>
+                    <p
+                      class="card__price-value"
+                      style="font-family: 'Indie Flower', sans-serif"
+                    >
+                      carrotcart
+                    </p>
+                    <ul class="card__website-description">
+                      <span
+                        >A modern react app built for a fictional small farming
+                        business</span
+                      >
+                      <li>Full stack React/Redux application</li>
+                      <li>Fetch API for asynchronous requests</li>
+                      <li>Custom styled-components</li>
+                      <li>
+                        Payments handled by backend built with NodeJS and
+                        ExpressJS
+                      </li>
+                      <li>Firebase authentication and authorization</li>
+                      <li>Firestore NoSQL database</li>
+                    </ul>
                   </div>
-                  <a class="btn btn--white">Website</a><br /><br />
-                  <a class="btn btn--white">Github</a>
+                  <span style="display: flex; margin-bottom: 4rem">
+                    <a
+                      href="http://carrotcart.herokuapp.com/"
+                      class="btn btn--white"
+                      target="_blank"
+                      >Website</a
+                    >
+                    <a
+                      href="https://github.com/jeyeverett/carrotcart"
+                      class="btn btn--white"
+                      target="_blank"
+                      >Github</a
+                    >
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="card on-render">
+            <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <h4 class="card__heading">
@@ -237,17 +264,17 @@
             </div>
           </div>
         </div>
-        <div class="u-center-text on-render">
+        <div class="u-center-text">
           <a href="#" class="btn btn--green">Checkout all projects</a>
         </div>
       </section>
       <section class="section-services">
-        <div class="u-center-text u-move-text-up on-render" id="services">
+        <div class="u-center-text u-move-text-up" id="services">
           <h2 class="heading-secondary" style="color: #fff">Services</h2>
         </div>
         <div class="row">
           <div class="col-1-of-3">
-            <div class="feature-box on-render">
+            <div class="feature-box">
               <i class="fab fa-sass feature-box__icon"></i>
               <i class="fab fa-js-square feature-box__icon"></i>
               <i class="fab fa-react feature-box__icon"></i>
@@ -266,7 +293,7 @@
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="feature-box on-render">
+            <div class="feature-box">
               <i class="fab fa-node feature-box__icon"></i>
               <i class="fas fa-database feature-box__icon"></i>
               <br /><br />
@@ -285,7 +312,7 @@
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="feature-box on-render">
+            <div class="feature-box">
               <i class="fab fa-aws feature-box__icon"></i>
               <br /><br />
               <h3 class="heading-tertiary u-margin-bottom-small">Deployment</h3>
@@ -303,30 +330,55 @@
       </section>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big" id="about">
-          <h2 class="heading-secondary on-render">About me</h2>
+          <h2 class="heading-secondary">About me</h2>
         </div>
         <div class="row">
-          <div class="col-1-of-2 on-render">
+          <div class="col-1-of-2">
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Passionate innovator and creator
+              Dedicated internet professional
             </h3>
             <p class="paragraph">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
-              corrupti sunt nihil amet, soluta voluptate placeat veritatis.
+              The internet - an incredible tool that creates practically
+              unlimited opportunities for business and innovation. It continues
+              to revolutionize industry, and regardless of enterprise we can be
+              sure the internet has the power to dramatically transform its
+              results.
+              <span class="paragraph__subtext">
+                <em>Did you know?</em> Most people you meet these days lead
+                lives that are deeply intertwined with the web, and yet about
+                <strong
+                  >one third of the world does not have internet access</strong
+                >
+                - imagine what a 100% connected world could accomplish?
+              </span>
+              I believe we've only scratched the surface of what the internet
+              can do for us. It is evolving rapidly and to maintain a
+              competitive edge, businesses have no choice but to evolve
+              alongside it. To handle this increasing complexity we need a new
+              type of professional. We need a hybrid scientist/engineer/artist
+              that can rapidly <em>assimilate</em> new technology and
+              <em>create</em> data-backed solutions that provide reliable,
+              scaleabable, fault-tolerant and evolutionary architectures.
+              Whether you are building a simple landing page, designing a
+              sophisticated web application, or planning a targeted ads
+              campaign, if you aren't taking a data-driven approach you will be
+              limping while others are flying. Don't leave the most important
+              parts of your business to amateurs - get optimal results from the
+              people trained to gather and harness the power of data.
             </p>
 
-            <h3 class="heading-tertiary u-margin-bottom-small">
+            <!-- <h3 class="heading-tertiary u-margin-bottom-small">
               Lifelong learner and problem solver
             </h3>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
               tempora tempore ratione enim rerum aut doloribus saepe
               voluptatibus vel quam.
-            </p>
+            </p> -->
             <!-- <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a> -->
           </div>
           <div class="col-1-of-2 aws">
-            <div class="aws__badge on-render">
+            <div class="aws__badge">
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
@@ -334,7 +386,7 @@
                 data-share-badge-host="https://www.credly.com"
               ></div>
             </div>
-            <div class="aws__badge on-render">
+            <div class="aws__badge">
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
@@ -346,79 +398,130 @@
         </div>
       </section>
       <section class="gallery">
-        <figure class="gallery__item gallery__item--1 on-render">
-          <img class="gallery__item--1-img" alt="nodejs" title="nodejs" />
+        <figure class="gallery__item gallery__item--1">
+          <a href="https://nodejs.org/" target="_blank">
+            <img class="gallery__item--1-img" alt="nodejs" title="nodejs" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--2 on-render">
-          <img class="gallery__item--2-img" alt="aws" title="aws" />
+        <figure class="gallery__item gallery__item--2">
+          <a href="https://aws.amazon.com/" target="_blank">
+            <img class="gallery__item--2-img" alt="aws" title="aws" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--3 on-render">
-          <img
-            class="gallery__item--3-img"
-            alt="pogstresql"
-            title="postgresql"
-          />
+        <figure class="gallery__item gallery__item--3">
+          <a href="https://www.postgresql.org/" target="_blank">
+            <img
+              class="gallery__item--3-img"
+              alt="pogstresql"
+              title="postgresql"
+            />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--4 on-render">
-          <img
-            src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
-            alt="expressjs"
-            title="expressjs"
-          />
+        <figure class="gallery__item gallery__item--4">
+          <a href="https://expressjs.com/" target="_blank">
+            <img
+              src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
+              alt="expressjs"
+              title="expressjs"
+            />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--5 on-render">
-          <img class="gallery__item--5-img" alt="mongodb" title="mongodb" />
+        <figure class="gallery__item gallery__item--5">
+          <a href="https://www.mongodb.com/" target="_blank">
+            <img class="gallery__item--5-img" alt="mongodb" title="mongodb" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--6 on-render">
-          <img
-            class="gallery__item--6-img"
-            alt="javascript"
-            title="javascript"
-          />
+        <figure class="gallery__item gallery__item--6">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+          >
+            <img
+              class="gallery__item--6-img"
+              alt="javascript"
+              title="javascript"
+            />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--7 on-render">
-          <img class="gallery__item--7-img" alt="bootstrap" title="bootstrap" />
+        <figure class="gallery__item gallery__item--7">
+          <a href="https://getbootstrap.com/" target="_blank">
+            <img
+              class="gallery__item--7-img"
+              alt="bootstrap"
+              title="bootstrap"
+            />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--8 on-render">
-          <img class="gallery__item--8-img" alt="react" title="react" />
+        <figure class="gallery__item gallery__item--8">
+          <a href="https://reactjs.org/" target="_blank">
+            <img class="gallery__item--8-img" alt="react" title="react" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--9 on-render">
-          <img class="gallery__item--9-img" alt="firebase" title="firebase" />
+        <figure class="gallery__item gallery__item--9">
+          <a href="https://firebase.google.com/" target="_blank">
+            <img class="gallery__item--9-img" alt="firebase" title="firebase" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--10 on-render">
-          <img class="gallery__item--10-img" alt="css3" title="css3" />
+        <figure class="gallery__item gallery__item--10">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+          >
+            <img class="gallery__item--10-img" alt="css3" title="css3" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--11 on-render">
-          <img class="gallery__item--11-img" alt="html5" title="html5" />
+        <figure class="gallery__item gallery__item--11">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+            target="_blank"
+          >
+            <img class="gallery__item--11-img" alt="html5" title="html5" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--12 on-render">
-          <img class="gallery__item--12-img" alt="sass" title="sass" />
+        <figure class="gallery__item gallery__item--12">
+          <a href="https://sass-lang.com/" target="_blank">
+            <img class="gallery__item--12-img" alt="sass" title="sass" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--13 on-render">
-          <img class="gallery__item--13-img" alt="npm" title="npm" />
+        <figure class="gallery__item gallery__item--13">
+          <a href="https://www.npmjs.com/" target="_blank">
+            <img class="gallery__item--13-img" alt="npm" title="npm" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--14 on-render">
-          <img class="gallery__item--14-img" alt="github" title="github" />
+        <figure class="gallery__item gallery__item--14">
+          <a href="https://github.com/" target="_blank">
+            <img class="gallery__item--14-img" alt="github" title="github" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--15 on-render">
-          <img class="gallery__item--15-img" alt="docker" title="docker" />
+        <figure class="gallery__item gallery__item--15">
+          <a href="https://www.docker.com/" target="_blank">
+            <img class="gallery__item--15-img" alt="docker" title="docker" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--16 on-render">
-          <img class="gallery__item--16-img" alt="figma" title="figma" />
+        <figure class="gallery__item gallery__item--16">
+          <a href="https://www.figma.com/" target="_blank">
+            <img class="gallery__item--16-img" alt="figma" title="figma" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--17 on-render">
-          <img class="gallery__item--17-img" alt="graphql" title="graphql" />
+        <figure class="gallery__item gallery__item--17">
+          <a href="https://graphql.org/" target="_blank">
+            <img class="gallery__item--17-img" alt="graphql" title="graphql" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--18 on-render">
-          <img class="gallery__item--18-img" alt="git" title="git" />
+        <figure class="gallery__item gallery__item--18">
+          <a href="https://git-scm.com/" target="_blank">
+            <img class="gallery__item--18-img" alt="git" title="git" />
+          </a>
         </figure>
-        <figure class="gallery__item gallery__item--19 on-render">
-          <img class="gallery__item--19-img" alt="redis" title="redis" />
+        <figure class="gallery__item gallery__item--19">
+          <a href="https://redis.io/" target="_blank">
+            <img class="gallery__item--19-img" alt="redis" title="redis" />
+          </a>
         </figure>
       </section>
       <section class="section-book" id="contact">
         <div class="row">
-          <div class="book on-render">
+          <div class="book">
             <div class="book__form">
               <form
                 action="https://formspree.io/f/mleaelay"
@@ -427,16 +530,11 @@
                 id="contact-form"
               >
                 <div class="u-margin-bottom-medium u-center-text">
-                  <h2
-                    class="
-                      heading-secondary heading-secondary__contact
-                      on-render
-                    "
-                  >
+                  <h2 class="heading-secondary heading-secondary__contact">
                     Contact me
                   </h2>
                 </div>
-                <div class="form__group on-render">
+                <div class="form__group">
                   <input
                     type="text"
                     class="form__input"
@@ -447,7 +545,7 @@
                   />
                   <label for="name" class="form__label">Full Name</label>
                 </div>
-                <div class="form__group on-render">
+                <div class="form__group">
                   <input
                     type="email"
                     class="form__input"
@@ -459,13 +557,11 @@
                   <label for="email" class="form__label">Email</label>
                 </div>
                 <div class="form__group u-center-text">
-                  <button class="btn btn--green form__btn on-render">
-                    Send
-                  </button>
+                  <button class="btn btn--green form__btn">Send</button>
                 </div>
               </form>
             </div>
-            <div class="form__group--text on-render">
+            <div class="form__group--text">
               <textarea
                 class="form__input form__textarea"
                 name="message"
@@ -485,7 +581,7 @@
     </main>
 
     <footer class="footer u-center-text">
-      <div class="footer__navigation on-render">
+      <div class="footer__navigation">
         <ul class="footer__list">
           <li class="footer__item">
             <a href="#projects" class="footer__link">Projects</a>
@@ -504,14 +600,14 @@
       <div class="footer__logo-box">
         <!-- Below is for responsive images, specifically choosing the right version of the image for the right screen. In the srcset atrribute we list the images by resolution as shown. We use the Source tag to provide a media query i.e. if the media query is true, we use a src from the Source tag (either the 1x or 2x depending on resolution), if not we use the img tag srcset -->
 
-        <picture class="footer__logo on-render">
+        <picture class="footer__logo">
           <img
             src="img/selfie_small.jpg"
             alt="footer selfie"
             class="footer__logo"
           />
         </picture>
-        <div class="footer__logo-box--caption on-render">
+        <div class="footer__logo-box--caption">
           Jeysen Freedman<br />
           Web Application and Cloud Developer<br />
           jeysenfreedman@gmail.com<br /><br />
@@ -546,7 +642,7 @@
           </span>
         </div>
       </div>
-      <div class="footer__icons on-render">
+      <div class="footer__icons">
         <span>
           <a href="https://linkedin.com/in/jeysenfreedman" target="_blank">
             <img class="footer__icons--1" />
@@ -556,9 +652,7 @@
           </a>
         </span>
       </div>
-      <p class="footer__copyright on-render">
-        Copyright &copy; 2021 by Jeysen Freedman
-      </p>
+      <p class="footer__copyright">Copyright &copy; 2021 by Jeysen Freedman</p>
     </footer>
 
     <div class="backToTop">

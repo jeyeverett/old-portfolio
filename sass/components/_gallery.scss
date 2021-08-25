@@ -16,6 +16,9 @@
   justify-items: center;
 
   &__item {
+    &:hover {
+      cursor: pointer;
+    }
     //We put each image in a container so we can use object-fit to keep the image inside the grid-cell
     &--1 {
       grid-column: 1 / span 2;
