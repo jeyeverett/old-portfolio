@@ -1,6 +1,9 @@
-.aws {
+.certs {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 6rem;
 
   @include respond(phone) {
     align-items: center;
@@ -9,12 +12,14 @@
   }
 
   &__badge {
-    width: min-content;
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     border-radius: 2px;
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 1rem;
+
+    img {
+      height: 100px;
+    }
 
     &:last-child {
       margin-left: 2rem;
@@ -24,20 +29,14 @@
       }
     }
 
-    @include respond(tab-port) {
-      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
-    }
-
     &:hover {
-      outline: 1rem solid $color-primary;
-      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      // outline: 0.5rem solid $color-primary;
       transform: translateY(-3px);
       z-index: 20;
 
-      @include respond(tab-port) {
-        outline: 0.5rem solid $color-primary;
-        box-shadow: 0 1.5rem 3rem rgba($color-black, 0.4);
-      }
+      // @include respond(tab-port) {
+      //   outline: 0.5rem solid $color-primary;
+      // }
     }
   }
 }

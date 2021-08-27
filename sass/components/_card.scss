@@ -34,11 +34,7 @@
       }
 
       &--3 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary-dark
-        );
+        background-color: $color-primary-dark;
       }
     }
   }
@@ -74,11 +70,7 @@
       }
     }
     &--3 {
-      background-image: /*url('../img/nat-7-small.jpg'),*/ linear-gradient(
-        to right bottom,
-        $color-primary-light,
-        $color-primary-dark
-      );
+      background-image: url('../img/fleemarket_small.png');
     }
   }
 
@@ -106,7 +98,7 @@
         rgba($color-primary-dark, 0.85)
       );
       text-transform: none;
-      font-family: 'Comfortaa', 'Montserrat';
+      font-family: 'Comfortaa', sans-serif;
       font-weight: 500;
     }
     &--2 {
@@ -117,7 +109,7 @@
       );
       text-transform: none;
 
-      font-family: 'Indie Flower', 'Montserrat';
+      font-family: 'Indie Flower', sans-serif;
     }
     &--3 {
       background-image: linear-gradient(
@@ -125,6 +117,7 @@
         rgba($color-primary, 0.85),
         rgba($color-primary-dark, 0.85)
       );
+      font-family: 'Luckiest Guy', sans-serif;
     }
   }
 
@@ -181,7 +174,7 @@
   }
 
   &__price-value {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 100;
   }
 

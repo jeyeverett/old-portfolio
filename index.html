@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&family=Indie+Flower&family=Comfortaa:wght@500"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&family=Indie+Flower&family=Comfortaa:wght@500&family=Luckiest+Guy"
       rel="stylesheet"
     />
     <link
@@ -125,7 +125,7 @@
                     <li>JavaScript</li>
                     <li>EJS</li>
                     <li>NodeJS & ExpressJS</li>
-                    <li>MongoDB</li>
+                    <li>MongoDB & Cloudinary</li>
                   </ul>
                 </div>
               </div>
@@ -152,7 +152,7 @@
                       <li>Real-time chat with WebSockets and socket.io</li>
                     </ul>
                   </div>
-                  <span style="display: flex; margin-bottom: 4rem">
+                  <span style="display: flex; margin-bottom: 2rem">
                     <a
                       href="http://booxapp.herokuapp.com/"
                       class="btn btn--white"
@@ -214,7 +214,7 @@
                       <li>Firestore NoSQL database</li>
                     </ul>
                   </div>
-                  <span style="display: flex; margin-bottom: 4rem">
+                  <span style="display: flex; margin-bottom: 2rem">
                     <a
                       href="http://carrotcart.herokuapp.com/"
                       class="btn btn--white"
@@ -238,34 +238,73 @@
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--3">
-                    React Store
+                    Fleemarket
                   </span>
                 </h4>
                 <div class="card__details">
                   <ul>
-                    <li>CSS in JS</li>
+                    <li>HTML and SCSS</li>
                     <li>JavaScript</li>
-                    <li>ReactJS</li>
+                    <li>EJS</li>
                     <li>NodeJS & ExpressJS</li>
-                    <li>Firestore</li>
+                    <li>MongoDB</li>
                   </ul>
                 </div>
               </div>
               <div class="card__side card__side--back card__side--back--3">
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">$897</p>
+                    <p
+                      class="card__price-value"
+                      style="
+                        font-family: 'Luckiest Guy', sans-serif;
+                        font-size: 4rem;
+                      "
+                    >
+                      Fleemarket
+                    </p>
+                    <ul class="card__website-description">
+                      <span
+                        >A full-stack web app built for a fictional
+                        auction-style marketplace
+                      </span>
+                      <li>Full stack NodeJS web app</li>
+                      <li>
+                        Authentication and authorization from scratch with
+                        bcrypt
+                      </li>
+                      <li>
+                        Custom password reset with nodemailer and Mailtrap
+                      </li>
+                      <li>Stripe payments</li>
+                      <li>MongoDB NoSQL database</li>
+                      <li>MVC architecture</li>
+                      <li>CURRENTLY BEING REDESIGNED!</li>
+                    </ul>
                   </div>
-                  <a class="btn btn--white">Website</a><br /><br />
-                  <a class="btn btn--white">Github</a>
+                  <span style="display: flex; margin-bottom: 2rem">
+                    <a
+                      href="http://fleemarket.herokuapp.com/"
+                      class="btn btn--white"
+                      target="_blank"
+                      >Website</a
+                    >
+                    <a
+                      href="https://github.com/jeyeverett/fleemarket"
+                      class="btn btn--white"
+                      target="_blank"
+                      >Github</a
+                    >
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="u-center-text">
-          <a href="#" class="btn btn--green">Checkout all projects</a>
+          <a href="#" class="btn btn--green"
+            >Check out all projects (coming soon)</a
+          >
         </div>
       </section>
       <section class="section-services">
@@ -283,9 +322,11 @@
                 Front-end Development
               </h3>
               <p class="feature-box__text">
-                Keep users glued to your web page! Craft captivating and
-                responsive websites that keep users engaged and interested in
-                reading about the benefits of your business.
+                I professionally design and build responsive SEO optimized
+                landing pages, websites and web applications. With an
+                understanding of your target audience we can create fantastic
+                user experiences that will drive conversions and increase your
+                profits.
               </p>
               <p class="feature-box__text feature-box__text--caption">
                 <strong>HTML - CSS - JavaScript - React</strong>
@@ -301,10 +342,10 @@
                 Back-end Development
               </h3>
               <p class="feature-box__text">
-                Craft reliable business logic that will handle your data
-                efficiently. Use best practicies to optimize your database and
-                provide scalable implementations that will grow with your
-                business.
+                The back-end is the powerhouse of your web app. JavaScript and
+                NodeJS let us use core web technology to build efficient, high
+                performance web APIs. Using the right database you will collect
+                critical data, save money, and keep your business innovating.
               </p>
               <p class="feature-box__text feature-box__text--caption">
                 <strong>NodeJS - ExpressJS - MongoDB</strong>
@@ -315,14 +356,17 @@
             <div class="feature-box">
               <i class="fab fa-aws feature-box__icon"></i>
               <br /><br />
-              <h3 class="heading-tertiary u-margin-bottom-small">Deployment</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Cloud Deployment
+              </h3>
               <p class="feature-box__text">
                 Leave the management of your internet infrastructure to the best
-                in the business. Make use of over 200 powerful AWS services to
-                create, innovate and boost sales.
+                in the business. With hundreds of cloud services to choose from
+                you can innovate like never before. Easily integrate machine
+                learning and AI to supercharge your business.
               </p>
               <p class="feature-box__text feature-box__text--caption">
-                <strong>EC2 - S3 - ECS - Route53</strong>
+                <strong>EC2 - S3 - Firebase</strong>
               </p>
             </div>
           </div>
@@ -332,67 +376,91 @@
         <div class="u-center-text u-margin-bottom-big" id="about">
           <h2 class="heading-secondary">About me</h2>
         </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Dedicated internet professional
-            </h3>
-            <p class="paragraph">
-              The internet - an incredible tool that creates practically
-              unlimited opportunities for business and innovation. It continues
-              to revolutionize industry, and regardless of enterprise we can be
-              sure the internet has the power to dramatically transform its
-              results.
-              <span class="paragraph__subtext">
-                <em>Did you know?</em> Most people you meet these days lead
-                lives that are deeply intertwined with the web, and yet about
-                <strong
-                  >one third of the world does not have internet access</strong
-                >
-                - imagine what a 100% connected world could accomplish?
-              </span>
-              I believe we've only scratched the surface of what the internet
-              can do for us. It is evolving rapidly and to maintain a
-              competitive edge, businesses have no choice but to evolve
-              alongside it. To handle this increasing complexity we need a new
-              type of professional. We need a hybrid scientist/engineer/artist
-              that can rapidly <em>assimilate</em> new technology and
-              <em>create</em> data-backed solutions that provide reliable,
-              scaleabable, fault-tolerant and evolutionary architectures.
-              Whether you are building a simple landing page, designing a
-              sophisticated web application, or planning a targeted ads
-              campaign, if you aren't taking a data-driven approach you will be
-              limping while others are flying. Don't leave the most important
-              parts of your business to amateurs - get optimal results from the
-              people trained to gather and harness the power of data.
-            </p>
-
-            <!-- <h3 class="heading-tertiary u-margin-bottom-small">
-              Lifelong learner and problem solver
-            </h3>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              tempora tempore ratione enim rerum aut doloribus saepe
-              voluptatibus vel quam.
-            </p> -->
-            <!-- <a href="#" class="btn-text u-margin-bottom-small">Learn more &rarr;</a> -->
+        <div class="section-about__container">
+          <div class="section-about__container-info">
+            <article>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Engineer, designer and analyst
+              </h3>
+              <p class="paragraph">
+                As the power of the internet increases so does its complexity.
+                To navigate this uncharted territory we need new types of hybrid
+                professionals that can bridge the gap between technical and
+                business requirements.
+                <br /><br />
+                Combining a formal background in science and engineering with
+                web design and analytics gives me the skills to accomplish your
+                web objectives with precision. Don't leave the most important
+                parts of your business to amateurs - get optimal results from
+                the problem solving professionals trained to harness the power
+                of data.
+              </p>
+            </article>
+            <article>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                fueled by data and creativity
+              </h3>
+              <p class="paragraph">
+                Whether you are building a simple landing page, designing a
+                sophisticated web application, or planning a targeted ads
+                campaign, if you aren't taking a data-driven approach you will
+                be limping while others are flying.
+                <br /><br />
+                The internet is evolving rapidly and to survive, businesses must
+                evolve alongside it. I help businesses of all sizes integrate
+                new technology, create data-backed solutions and establish
+                reliable, scaleable, fault-tolerant and evolutionary
+                architectures. If your business needs a boost I guarantee we can
+                find a cost-effective web solution.
+              </p>
+            </article>
+            <!-- <article>
+              <p class="paragraph">
+                <span class="paragraph__subtext">
+                  <em>Did you know?</em> Most people you meet these days lead
+                  lives that are deeply intertwined with the web, and yet about
+                  <strong
+                  >one third of the world does not have internet
+                  access</strong
+                  >
+                  - imagine what a 100% connected world could accomplish?
+                </span>
+              </p>
+            </article> -->
           </div>
-          <div class="col-1-of-2 aws">
-            <div class="aws__badge">
-              <div
-                data-iframe-width="150"
-                data-iframe-height="270"
-                data-share-badge-id="8e6f0544-7efd-4664-b994-cf7da49631fc"
-                data-share-badge-host="https://www.credly.com"
-              ></div>
+          <div class="certs">
+            <div class="certs__badge">
+              <a
+                href="https://skillshop.exceedlms.com/student/award/Hf4Xb9x7EEvjUUQYyK6XxtbU"
+                target="_blank"
+              >
+                <img
+                  src="/img/google-analytics.png"
+                  alt="google analytics individual qualification"
+                />
+              </a>
             </div>
-            <div class="aws__badge">
-              <div
-                data-iframe-width="150"
-                data-iframe-height="270"
-                data-share-badge-id="84379dad-225f-4a31-88e3-04e5a8eadd57"
-                data-share-badge-host="https://www.credly.com"
-              ></div>
+            <div class="certs__badge">
+              <a
+                href="https://www.credly.com/badges/8e6f0544-7efd-4664-b994-cf7da49631fc/embedded"
+                target="_blank"
+              >
+                <img
+                  src="/img/aws-cloudprac.png"
+                  alt="aws cloud practitioner"
+                />
+              </a>
+            </div>
+            <div class="certs__badge">
+              <a
+                href="https://www.credly.com/badges/84379dad-225f-4a31-88e3-04e5a8eadd57/embedded"
+                target="_blank"
+              >
+                <img
+                  src="/img/aws-solarch.png"
+                  alt="aws solutions architect associate"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -674,10 +742,5 @@
     </div>
 
     <script src="javascript/script.js"></script>
-    <script
-      type="text/javascript"
-      async
-      src="//cdn.credly.com/assets/utilities/embed.js"
-    ></script>
   </body>
 </html>

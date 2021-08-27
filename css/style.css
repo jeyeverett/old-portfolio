@@ -315,39 +315,33 @@ u-text-white {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
 
-.aws {
+.certs {
   display: flex;
-  justify-content: center; }
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 6rem; }
   @media only screen and (max-width: 37.5em) {
-    .aws {
+    .certs {
       align-items: center;
       justify-items: center;
       flex-direction: column; } }
-  .aws__badge {
-    width: min-content;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  .certs__badge {
     border-radius: 2px;
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 1rem; }
-    .aws__badge:last-child {
+    .certs__badge img {
+      height: 100px; }
+    .certs__badge:last-child {
       margin-left: 2rem; }
       @media only screen and (max-width: 37.5em) {
-        .aws__badge:last-child {
+        .certs__badge:last-child {
           margin-left: 0;
           margin-top: 3rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .aws__badge {
-        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
-    .aws__badge:hover {
-      outline: 1rem solid #1379a8;
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    .certs__badge:hover {
       transform: translateY(-3px);
       z-index: 20; }
-      @media only screen and (max-width: 56.25em) {
-        .aws__badge:hover {
-          outline: 0.5rem solid #1379a8;
-          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -355,7 +349,8 @@ u-text-white {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all 0.2s; }
   @media only screen and (max-width: 75em) {
     .feature-box {
       padding: 2rem; } }
@@ -387,8 +382,7 @@ u-text-white {
     .feature-box__text--caption {
       margin-top: 2rem; }
   .feature-box:hover {
-    transform: translateY(-1rem) scale(1.02);
-    box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 3rem 4rem rgba(255, 255, 255, 0.15); }
 
 .card {
   perspective: 150rem;
@@ -416,7 +410,7 @@ u-text-white {
       .card__side--back--2 {
         background-color: #08374d; }
       .card__side--back--3 {
-        background-image: linear-gradient(to right bottom, #1cb7ff, #08374d); }
+        background-color: #08374d; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -440,7 +434,7 @@ u-text-white {
         .card__picture--2 {
           background-size: cover; } }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #1cb7ff, #08374d); }
+      background-image: url("../img/fleemarket_small.png"); }
   .card__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -458,14 +452,15 @@ u-text-white {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(19, 121, 168, 0.85), rgba(8, 55, 77, 0.85));
       text-transform: none;
-      font-family: 'Comfortaa', 'Montserrat';
+      font-family: 'Comfortaa', sans-serif;
       font-weight: 500; }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(19, 121, 168, 0.85), rgba(8, 55, 77, 0.85));
       text-transform: none;
-      font-family: 'Indie Flower', 'Montserrat'; }
+      font-family: 'Indie Flower', sans-serif; }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(19, 121, 168, 0.85), rgba(8, 55, 77, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(19, 121, 168, 0.85), rgba(8, 55, 77, 0.85));
+      font-family: 'Luckiest Guy', sans-serif; }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -504,7 +499,7 @@ u-text-white {
       .card__website-description li:first-of-type {
         margin-top: 1rem; }
   .card__price-value {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 100; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
@@ -999,7 +994,19 @@ u-text-white {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 20rem 5rem 10rem 5rem; }
+  padding: 20rem 5rem 5rem 5rem; }
+  .section-about__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .section-about__container-info {
+      display: flex;
+      justify-content: center; }
+      .section-about__container-info article {
+        width: 30%; }
+        .section-about__container-info article:first-of-type {
+          margin-right: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0 10rem 0; } }
@@ -1496,10 +1503,10 @@ u-text-white {
       max-width: 52rem;
       padding: 0 3rem; } }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 6rem; } }
+        margin-bottom: 4rem; } }
   .row::after {
     content: '';
     display: table;
@@ -1511,7 +1518,7 @@ u-text-white {
       @media only screen and (max-width: 56.25em) {
         .row [class^='col-']:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-bottom: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .row [class^='col-'] {
         width: 100% !important; } }

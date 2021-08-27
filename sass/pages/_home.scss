@@ -1,6 +1,24 @@
 .section-about {
   background-color: $color-grey-light-1; //$color-grey-light-1
-  padding: 20rem 5rem 10rem 5rem;
+  padding: 20rem 5rem 5rem 5rem;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &-info {
+      display: flex;
+      justify-content: center;
+      article {
+        width: 30%;
+        &:first-of-type {
+          margin-right: 5rem;
+        }
+      }
+    }
+  }
 
   @include respond(tab-port) {
     padding: 20rem 0 10rem 0;
