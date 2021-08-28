@@ -1,14 +1,13 @@
 .certs {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
   width: 50%;
   margin-top: 6rem;
 
   @include respond(phone) {
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
+    width: 75%;
   }
 
   &__badge {
@@ -19,13 +18,8 @@
 
     img {
       height: 100px;
-    }
-
-    &:last-child {
-      margin-left: 2rem;
       @include respond(phone) {
-        margin-left: 0;
-        margin-top: 3rem;
+        height: 50px;
       }
     }
 
